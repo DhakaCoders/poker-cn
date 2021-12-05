@@ -179,6 +179,7 @@ thead.tbl-thead tr th {
     height: 540px;
     max-width: 500px;
     width: 100%;
+    position: relative;
 }
 .pk-strtgy-tls-des{
     padding-left:82px;
@@ -203,6 +204,22 @@ thead.tbl-thead tr th {
 .pk-strtgy-tls-des-btn a:hover+svg{
     transform: translateX(5px);
 }
+.pk-strtgy-tls-lft-img span {
+    font-size: 16px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    background: #001825;
+    width: 200px;
+    display: flex;
+    height: 60px;
+    padding: 20px 20px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    position: absolute;
+    top: 23px;
+    left: 0;
+}
 
 
 
@@ -219,6 +236,25 @@ thead.tbl-thead tr th {
     height: 440px;
     padding-bottom: 20px;
     border-bottom: 1px solid #2C3A4E;
+    
+}
+
+.news-grid-item-img-ineer{
+    width: 100%;
+    overflow:hidden;
+    height: 100%;
+    position: relative;
+}
+.news-grid-item-div{
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+
+}
+.news-grid-item-img-ineer:hover .news-grid-item-div{
+    transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -webkit-transform: scale(1.04);
 }
 .news-grid-item{
     padding: 0 20px;
@@ -269,8 +305,28 @@ thead.tbl-thead tr th {
 .news-grid-item-title{
     font-size:23px;
 }
+.news-grid-item-title a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    vertical-align: baseline;
+}
+.news-grid-item-title a:hover{
+    color:#FF1C1C;
+}
 .fl-prev-next .fl-prev{
     margin-right: 40px;
+}
+.fl-prev-next i {
+    display: inline-block;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+.fl-prev-next i:hover svg.slider-lft-arrow-svg{
+    transform: translateX(-10px);
+}
+.fl-prev-next i:hover svg.slider-rgt-arrow-svg{
+    transform: translateX(10px);
 }
 .fl-prev svg.slider-lft-arrow-svg,
 .fl-next .slider-rgt-arrow-svg{

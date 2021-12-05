@@ -290,16 +290,16 @@ body.login-register.hide-account-title .select2-container--open .select2-dropdow
 /*slider break fix*/
 
 .hmProdctGrdsSlider .hmProdctGrdsSlideItme,
-.clubCollectionSlider .club-collection-slider-item{
+.newsSlider .news-grid-item{
 	display: none;
 }
 
 .hmProdctGrdsSlider .hmProdctGrdsSlideItme:first-child,
-.clubCollectionSlider .club-collection-slider-item:first-child{
+.newsSlider .news-grid-item:first-child{
 	display: block;
 }
 
 .hmProdctGrdsSlider.slick-initialized .hmProdctGrdsSlideItme,
-.clubCollectionSlider.slick-initialized .club-collection-slider-item{
+.newsSlider.slick-initialized .news-grid-item{
 	display: block;
 }
