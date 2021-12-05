@@ -41,3 +41,128 @@
 .sitemap ol li a:focus{
 	text-decoration: underline;
 }
+
+
+
+
+/* common button */
+
+.fl-btn{
+	display: inline-block;
+    vertical-align: baseline;
+    min-width:230px;
+    color: #fff;
+    background: #FF1C1C;
+    font-size: 18px;
+    line-height: 1.1;
+    text-align: center;
+    padding: 21px 20px;
+    font-weight: 600;
+    border: 2px solid #FF1C1C;
+    text-decoration: none;
+    position: relative;
+    padding-top: 25px;
+}
+.fl-btn:hover{
+	background: transparent;
+	color: #FF1C1C;
+
+}
+.fl-blc-btn{
+	display: inline-block;
+    vertical-align: baseline;
+    min-width:230px;
+    color: #fff;
+    background: #001825;
+    font-size: 18px;
+    line-height: 1.1;
+    text-align: center;
+    padding: 21px 20px;
+    font-weight: 600;
+    border: 2px solid #001825;
+    text-decoration: none;
+    position: relative;
+    padding-top: 25px;
+}
+.fl-blc-btn:hover{
+    background: #FF1C1C;
+    border: 2px solid #FF1C1C;
+
+}
+
+
+/*ul li design*/
+
+.default-page-con ul,
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 15px;
+}
+.default-page-con ul li, 
+ul li {
+    padding: 7px 0 25px 46px;
+    position: relative;
+    line-height: 28px;
+}
+.default-page-con ul li::before, 
+ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    background: url('../images/list-icon.svg');
+    background-repeat: no-repeat!important;
+    width: 33px;
+    background-color: #FF1C1C;
+    height: 33px;
+    border-radius: 100%;
+    background-position: center;
+}
+
+.default-page-con ol,
+ol{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 15px;
+	padding-left: 32px;
+	counter-reset: my-awesome-counter;
+	-ms-counter-reset: my-awesome-counter;
+	-webkit-counter-reset: my-awesome-counter;
+}
+.default-page-con ol li,
+ol li {
+	padding: 7px 0 15px 23px;
+	position: relative;
+	line-height: 28px;
+	counter-increment: my-awesome-counter;
+	-ms-counter-increment: my-awesome-counter;
+	-webkit-counter-increment: my-awesome-counter;
+}
+.default-page-con ol li::before,
+ol li::before {
+	content: counter(my-awesome-counter) ".";
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #FF1C1C;
+	font-weight: 700;
+	line-height: 28px;
+	text-align: center;
+	margin-top: 7px;
+}
+
+/*sec-entry-hdr*/
+
+.sec-entry-hdr {
+    max-width: 845px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.sec-entry-hdr-title {
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}

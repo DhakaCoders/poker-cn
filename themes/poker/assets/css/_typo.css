@@ -5,19 +5,24 @@ h1,h2,h3,h4,h5,h6{
 	line-height: 1;	
 	margin-top: 0;
 	margin-bottom: 20px;
+	color: #fff;
 }
-h1{
-	font-size: 33px;
+h1,.fl-h1{
+	font-size: 70px;
 }
-h2{
-	font-size: 30px;
+h2,.fl-h2{
+	font-size: 60px;
 }
-h3{
-	font-size: 28px;
+h3,.fl-h3{
+	font-size: 50px;
 }
-h4{
-	font-size: 24px;
+h4,.fl-h4{
+	font-size: 45px;
 }
-h5{
-	font-size: 15px;
+h5,.fl-h5{
+	font-size: 34px;
 }
+h6,.fl-h6{
+	font-size: 25px;
+}
+
