@@ -94,8 +94,11 @@ td.best-site-thumbnail a img {
     font-weight: 600;
     font-size: 24px;
 }
-tbody.tbl-bdy tr {
+tbody.tbl-bdy tr td {
     background: #16202F;
+    margin-bottom: 17px!important;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 thead.tbl-thead tr th {
     text-align: center;
@@ -122,6 +125,9 @@ thead.tbl-thead tr th {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+}
+tbody.tbl-bdy tr td.best-site-thumbnail {
+    padding-left: 40px;
 }
 
 
