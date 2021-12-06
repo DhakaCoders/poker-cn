@@ -231,6 +231,8 @@ td.payment-grate:before{
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -ms-transition: all 0.5s;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 .more-btn a:hover{
     color:#FF282E;
@@ -494,7 +496,9 @@ td.payment-grate:before{
     td.bst-site-des {
         padding-right: 20px;
     }
-
+    .more-btn a{
+        font-size:15px;
+    }
 
 
 
@@ -545,12 +549,26 @@ td.payment-grate:before{
     .fl-prev-next{
         top:5px;
     }
-   /* header{
-        overflow:hidden;
-    }*/
+
 }
 
 @media(max-width:991px){
+
+
+    /* width */
+.xs-mobile-menu ::-webkit-scrollbar {
+  width: 4px;
+}
+/* Track */
+.xs-mobile-menu ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px #757575;
+  border-radius: 10px;
+}
+/* Handle */
+.xs-mobile-menu ::-webkit-scrollbar-thumb {
+  background: #FF1C1C; 
+  border-radius: 10px;
+}
 
     /*hm-banner-sec*/
     .hm-bnr-img {
@@ -623,7 +641,12 @@ td.site-bonus {
 td.play-btn {
     width: 40%;
 }
-
+.best-site-selection-sec {
+    padding-bottom: 110px;
+}
+.table-dsc {
+    margin-bottom: 30px;
+}
 
 
 
@@ -716,8 +739,14 @@ td.play-btn {
     }
 
 
-
-
+.more-btn a {
+    font-size: 14px;
+}
+.more-btn a:after{
+    height:26px;
+    width:20px;
+    bottom:-45px;
+}
 
 
 
@@ -831,7 +860,12 @@ td.play-btn {
     width: 130px;
     margin-bottom: 15px;
 }
-
+.table-dsc {
+    margin-bottom: 20px;
+}
+.best-site-selection-sec {
+    padding-bottom: 90px;
+}
 
 
 
