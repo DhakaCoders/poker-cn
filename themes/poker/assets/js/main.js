@@ -24,7 +24,10 @@ if(windowWidth <=991){
     if( $('ul > li.menu-item-has-children').length ){
       $('ul > li.menu-item-has-children').click(function(){
        $(this).find('.sub-menu').slideToggle(300);
+       // $(this).parent().siblings().find('.sub-menu').slideUp(300);
+       // $(this).siblings().find('.sub-menu-arrow').removeClass('sub-menu-arrow');
        $(this).toggleClass('sub-menu-arrow');
+       $(this).siblings().find('.sub-menu-arrow').removeClass('sub-menu-arrow');
      });
     }
 }

@@ -477,6 +477,28 @@ td.payment-grate:before{
 
 
 
+/*best-site-selection-sec*/
+    tbody.tbl-bdy tr td.best-site-thumbnail{
+        padding-left: 20px;
+    }
+    .best-site-des {
+        padding-left: 20px;
+    }
+    td.play-btn {
+        padding-right: 20px;
+    }
+    td.best-site-thumbnail a{
+        width:190px;
+
+    }
+    td.bst-site-des {
+        padding-right: 20px;
+    }
+
+
+
+
+
 
 
 
@@ -553,6 +575,54 @@ td.payment-grate:before{
 
 
 
+/*best-site-selection-sec*/
+tbody.tbl-bdy tr {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+td.best-site-thumbnail {
+    width: 40%;
+}
+.site-bonus-btn .fl-btn {
+  min-width: 190px;
+}
+tbody.tbl-bdy tr td.bst-site-des {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+thead.tbl-thead {
+    display: none;
+}
+
+td.payment-grate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.payment-grate-inner{
+    width:100%;
+}
+td.payment-grate:after{
+    display: none;
+}
+td.site-bonus {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td.site-bonus {
+    width: 30%;
+}
+
+td.play-btn {
+    width: 40%;
+}
 
 
 
@@ -721,7 +791,46 @@ td.payment-grate:before{
     }
 
 
+/*best-site-selection-sec*/
 
+td.best-site-thumbnail a img {
+    max-height: 70px;
+    width: auto;
+}
+td.best-site-thumbnail a {
+    max-width: 190px;
+    width:100%;
+}
+.payment-grt-cntlr {
+    max-width: 75px;
+    height: 75px;
+}
+.payment-grt-cntlr span {
+    font-size: 18px;
+}
+td.payment-grate{
+    width:25%;
+}
+td.site-bonus {
+    width: 25%;
+}
+td.site-bonus .site-bonus-lft span {
+    font-size: 13px;
+}
+td.site-bonus .site-bonus-lft strong {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+td.play-btn {
+    width: 50%;
+}
+.site-reting span img {
+    max-width: 18px;
+}
+.site-reting {
+    width: 130px;
+    margin-bottom: 15px;
+}
 
 
 
@@ -768,6 +877,54 @@ td.payment-grate:before{
 }
 @media(max-width:479px){
 
+
+
+tbody.tbl-bdy tr td.best-site-thumbnail {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+tbody.tbl-bdy tr td.bst-site-des {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 0px;
+}
+
+.site-bonus-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+td.payment-grate{
+    width: 50%;
+}
+td.site-bonus{
+    width:50%;
+}
+td.play-btn{
+    width:100%;
+    padding-right:0;
+}
+td.best-site-thumbnail a{
+    max-width:100px;
+    height:100px;
+}
+
+td.best-site-thumbnail a img{
+    max-height:52px;
+}
+
+
+
+
+
+
+
+
     /*Poker-Strategy-Tools-sec*/
 
 
@@ -777,5 +934,14 @@ td.payment-grate:before{
     /*news-section*/
     .news-grid .slick-list.draggable {
         padding-right: 50px;
+    }
+}
+
+@media(max-width:359px){
+    tbody.tbl-bdy tr td.best-site-thumbnail{
+        width:100%;
+    }
+    tbody.tbl-bdy tr td.bst-site-des{
+        width:100%;
     }
 }
