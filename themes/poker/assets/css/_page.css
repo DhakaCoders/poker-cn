@@ -47,46 +47,47 @@
 
 /* common button */
 
-.fl-btn{
+.fl-red-btn{
 	display: inline-block;
     vertical-align: baseline;
-    min-width:230px;
+    min-width:210px;
     color: #fff;
     background: #FF1C1C;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.1;
     text-align: center;
-    padding: 21px 20px;
+    padding: 18px 20px;
     font-weight: 600;
     border: 2px solid #FF1C1C;
     text-decoration: none;
     position: relative;
-    padding-top: 25px;
+    padding-top: 22px;
 }
-.fl-btn:hover{
+.fl-red-btn:hover{
 	background: transparent;
 	color: #FF1C1C;
 
 }
-.fl-blc-btn{
+.fl-btn{
 	display: inline-block;
     vertical-align: baseline;
-    min-width:230px;
+    min-width:210px;
     color: #fff;
     background: #001825;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.1;
     text-align: center;
-    padding: 21px 20px;
+    padding: 18px 20px;
     font-weight: 600;
     border: 2px solid #001825;
     text-decoration: none;
     position: relative;
-    padding-top: 25px;
+    padding-top: 22px;
 }
-.fl-blc-btn:hover{
+.fl-btn:hover{
     background: #FF1C1C;
     border: 2px solid #FF1C1C;
+    color: #fff;
 
 }
 
