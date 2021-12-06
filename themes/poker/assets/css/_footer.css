@@ -6,3 +6,17 @@ footer.footer-wrp {
     padding-top:32px;
     padding-bottom:10px;
 }
+@media(max-width:1199px){
+	.ftr-logo a {
+	    max-width: 230px;
+	}
+}
+@media(max-width:991px){
+
+}
+@media(max-width:767px){
+	.ftr-logo a {
+	    max-width: 200px;
+	}
+}
+@media(max-width:575px){}

@@ -122,7 +122,7 @@ ul li::before {
     background-color: #FF1C1C;
     height: 33px;
     border-radius: 100%;
-    background-position: center;
+    background-position: 49% 50%;
 }
 
 .default-page-con ol,
@@ -169,4 +169,34 @@ ol li::before {
 .sec-entry-hdr-title {
     text-transform: uppercase;
     margin-bottom: 25px;
+}
+
+@media(max-width:1199px){
+	.default-page-con ul li, ul li {
+	    padding: 7px 0 20px 46px;
+	}
+	.fl-red-btn{
+		min-width:200px;
+	}
+}
+@media(max-width:991px){
+	 .default-page-con ul li::before, 
+	 ul li::before {
+        top: 5px;
+        width: 30px;
+        height: 30px;
+    }
+}
+@media(max-width:767px){
+	.default-page-con ul li::before, 
+	ul li::before {
+	    top: 6px;
+	    width: 28px;
+	    height: 28px;
+	    background-position: 46% 50%;
+	    background-size: 16px;
+	}
+	.default-page-con ul li, ul li {
+	    padding: 7px 0 17px 42px;
+	}
 }

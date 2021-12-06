@@ -307,3 +307,30 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu > li:hover:after {
 nav.main-nav > ul > li.menu-item-has-children:hover a{
     color: #E63312;
 }*/
+
+@media(max-width:1199px){
+    .logo a {
+        max-width: 230px;
+    }
+    nav.main-nav > ul > li {
+        padding: 0 14px;
+    }
+    .hdr-rgt-btn .hdr-btn{
+        min-width:175px;
+    }
+    nav.main-nav > ul > li > a{
+        padding-right:18px;
+    }
+    .hdr-rgt-btn {
+        padding-left: 14px;
+    }
+    nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
+        width:285px;
+        padding-left:15px;
+        padding-right:15px;
+    }
+    nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a{
+        font-size:12px;
+    }
+
+}

@@ -187,19 +187,12 @@ google.maps.event.addDomListener(window, 'load', initialize);
       nextArrow: $('.fl-prev-next .fl-next'),
       responsive: [
         {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
+          breakpoint:768,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false
           }
         },
         {
@@ -215,15 +208,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
       ]
     });
 }
+ // if (windowWidth > 767) {
 
   function attrvaluupdate(){
 
     var windowsize =  $(window).width();
-    console.log(windowsize);
+    
     var containerwidth = $(".container").width();
 
     var marginleft = ((windowsize-containerwidth)/2);
-
     $('.news-sec-cntlr').css({
       "padding-left":marginleft,
     });
@@ -235,5 +228,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
   $(window).resize(function(){
       attrvaluupdate();
   });
+// }
 
 })(jQuery);
