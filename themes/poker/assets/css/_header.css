@@ -29,7 +29,7 @@ nav.main-nav ul li{
 	
 }
 nav.main-nav ul li a{
-	font-size: 16px;
+	font-size: 15px;
     color: #fff;
     line-height: 1;
     text-decoration: none;
@@ -71,7 +71,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu {
     left: 0;
     background: #16202F;
     z-index: -9999;
-    width: 366px;
+    width: 333px;
     padding: 0;
     padding-top: 7px;
     padding-left: 24px;
@@ -127,7 +127,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
     line-height: 1;
 }
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a {
-    font-size: 14px;
+    font-size: 13px;
     padding: 19px 0px;
 }
 

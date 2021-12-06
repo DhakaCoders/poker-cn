@@ -15,10 +15,9 @@
     flex-wrap: wrap;
     position: relative;
     padding-top: 118px;
-    padding-bottom: 226px;
+    padding-bottom: 180px;
 }
 .hm-banner {
-    background-image: url(../images/banner-bg.png);
     padding-top: 210px;
 }
 
@@ -31,6 +30,7 @@
 }
 .hm-banner-des-inr {
     margin-bottom: 40px;
+    padding-right: 40px;
 }
 
 /*best-site-selection*/
@@ -68,6 +68,18 @@ td.best-site-thumbnail a {
     align-items: center;
     background: #001825;
 }
+tbody.tbl-bdy tr:nth-child(2) td.best-site-thumbnail a {
+    background: #121212;
+}
+tbody.tbl-bdy tr:nth-child(3) td.best-site-thumbnail a {
+    background: #ed1b24;
+}
+tbody.tbl-bdy tr:nth-child(4) td.best-site-thumbnail a {
+    background: #ffffff;
+}
+tbody.tbl-bdy tr:nth-child(5) td.best-site-thumbnail a {
+    background: #fcbe2c;
+}
 .site-des p:last-child {
     margin-bottom: 0;
 }
@@ -83,8 +95,8 @@ td.best-site-thumbnail a:hover img {
 }
 
 .payment-grt-cntlr {
-    max-width: 80px;
-    height: 80px;
+    max-width: 90px;
+    height: 90px;
     background: #001825;
     border-radius: 100%;
     display: flex;
@@ -96,13 +108,13 @@ td.best-site-thumbnail a:hover img {
 .payment-grt-cntlr span {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
 }
 tbody.tbl-bdy tr td {
     background: #16202F;
     margin-bottom: 17px!important;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 thead.tbl-thead tr th {
     text-align: center;
@@ -279,12 +291,12 @@ td.payment-grate:before{
 
 .pk-strtgy-tls-lft-img {
     height: 540px;
-    max-width: 500px;
+    max-width: 490px;
     width: 100%;
     position: relative;
 }
 .pk-strtgy-tls-des{
-    padding-left:82px;
+    padding-left:55px;
 }
 .pk-strtgy-tls-des p {
     color: #858DA2;
@@ -394,6 +406,7 @@ td.payment-grate:before{
 .news-sec-entry-hdr-cntlr .sec-entry-hdr {
     margin-left: initial;
     max-width: 500px;
+    margin-bottom: 10px;
 }
 .fl-prev-next {
     position: absolute;
@@ -402,7 +415,7 @@ td.payment-grate:before{
 }
 .news-section {
     padding-top: 190px;
-    padding-bottom: 150px;
+    padding-bottom: 130px;
 }
 .news-grid-item-title{
     font-size:23px;

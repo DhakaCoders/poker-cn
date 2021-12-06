@@ -62,6 +62,8 @@
     text-decoration: none;
     position: relative;
     padding-top: 22px;
+    text-transform: capitalize;
+    
 }
 .fl-red-btn:hover{
 	background: transparent;
@@ -83,6 +85,7 @@
     text-decoration: none;
     position: relative;
     padding-top: 22px;
+    text-transform: capitalize;
 }
 .fl-btn:hover{
     background: #FF1C1C;
