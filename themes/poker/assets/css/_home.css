@@ -72,10 +72,12 @@ td.best-site-thumbnail a {
     margin-bottom: 0;
 }
 td.best-site-thumbnail a img {
-    min-height: 100px;
+    max-height: 100px;
     width: auto;
 }
-
+td.best-site-thumbnail a:hover img {
+    transform: scale(1.05);
+}
 .best-site-des {
     padding-left: 40px;
 }
