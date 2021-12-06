@@ -8,6 +8,42 @@ $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
 });
 	
+
+
+
+$('.navbar-toggle').on('click', function(){
+  $('#mobile-nav').slideToggle(300);
+});
+
+if( $('.hamburger-icon').length ){
+  $('.hamburger-icon').click(function(){
+    $('body').toggleClass('allWork');
+  });
+}
+if(windowWidth <=991){
+    if( $('ul > li.menu-item-has-children').length ){
+      $('ul > li.menu-item-has-children').click(function(){
+       $(this).find('.sub-menu').slideToggle(300);
+       $(this).toggleClass('sub-menu-arrow');
+     });
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 //matchHeightCol
 if($('.mHc').length){

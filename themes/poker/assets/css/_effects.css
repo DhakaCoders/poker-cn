@@ -22,9 +22,8 @@ a:focus,button:focus,input:focus,textarea:focus{
 a:hover{
 	text-decoration: none;
 }
-nav.main-nav ul li:hover > a, 
-nav.main-nav ul li.current-menu-item a {
+nav.main-nav ul li:hover > a {
 
-    opacity: 0.8;
+    color: #FF1C1C;
 }
 

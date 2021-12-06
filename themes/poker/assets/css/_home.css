@@ -641,6 +641,29 @@ td.payment-grate:before{
 
 @media(max-width:767px){
 
+    /*hm-banner-sec*/
+    .hm-banner-des {
+        width: 500px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /*Poker-Strategy-Tools-sec*/
     .Poker-Strategy-Tools-sec {
         padding-top: 60px;
@@ -693,6 +716,21 @@ td.payment-grate:before{
 }
 
 @media(max-width:575px){
+    /*hm-banner-sec*/
+    .logo a {
+        max-width: 170px;
+    }
+    .hm-banner {
+        padding-top: 180px;
+    }
+
+
+
+
+
+
+
+
 
 
     /*Poker-Strategy-Tools-sec*/
