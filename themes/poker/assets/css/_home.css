@@ -150,6 +150,7 @@ td.site-bonus .site-bonus-lft strong {
 }
 td.payment-grate {
     width: 15%;
+    position: relative;
 }
 td.bst-site-des {
     width: 30%;
@@ -158,9 +159,30 @@ td.bst-site-des {
 td.best-site-thumbnail {
     width: 20%;
 }
-
-
-
+td.payment-grate:after {
+    content: "";
+    position: absolute;
+    height: 75%;
+    width: 1px;
+    background: #2C3A4E;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    left: 0;
+}
+td.payment-grate:before{
+    content: "";
+    position: absolute;
+    height: 75%;
+    width: 1px;
+    background: #2C3A4E;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    right: 0;
+}
 
 
 
