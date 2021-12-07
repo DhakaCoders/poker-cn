@@ -5,11 +5,9 @@
     right: 0;
     top: -78px;
 }
-
 .hm-banner-des {
     width: 47%;
 }
-
 .hm-bnr-cntlr {
     display: flex;
     flex-wrap: wrap;
@@ -20,7 +18,6 @@
 .hm-banner {
     padding-top: 210px;
 }
-
 .hm-bnr-title,
 .sec-entry-hdr-title{
     font-family: 'GlueGun';
@@ -39,24 +36,6 @@ thead.tbl-thead tr th span {
     letter-spacing: 0.255em;
     font-weight: 400;
 }
-/*thead.tbl-thead tr th.site-name,
-tbody.tbl-bdy tr td.best-site-thumbnail{
-    width: 45%;
-}*/
-
-/*tbody.tbl-bdy tr td.payment-grate,
-thead.tbl-thead tr th.payment{
-    width: 18%;
-}*/
-
-/*body.tbl-bdy tr td.site-bonus,
-thead.tbl-thead tr th.bonust{
-    width: 37%;
-}*/
-/*td.best-site-thumbnail {
-    display: flex;
-    width: 100%!important;
-}*/
 
 td.best-site-thumbnail a {
     vertical-align: baseline;
@@ -93,7 +72,6 @@ td.best-site-thumbnail a:hover img {
 .best-site-des {
     padding-left: 40px;
 }
-
 .payment-grt-cntlr {
     max-width: 90px;
     height: 90px;
@@ -216,7 +194,6 @@ td.payment-grate:before{
     text-align: center;
     position: relative;
 }
-
 .more-btn a:after {
     content: "";
     position: absolute;
@@ -249,24 +226,6 @@ td.payment-grate:before{
     border-bottom: 17px solid #001825;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*pk-strtgy-tls-sec*/
 .sec-entry-hdr.text-center {
     padding-bottom: 80px;
@@ -286,7 +245,6 @@ td.payment-grate:before{
     height: 100%;
     width: 100%;
 }
-
 .pk-strtgy-tls-lft-img {
     height: 540px;
     max-width: 490px;
@@ -333,8 +291,6 @@ td.payment-grate:before{
     left: 0;
 }
 
-
-
 /*news-section*/
 .news-sec-cntlr{
     overflow: hidden;
@@ -343,14 +299,12 @@ td.payment-grate:before{
     width: 100%;
     height: 100%;
 }
-
 .news-grid-item-img {
     height: 440px;
     padding-bottom: 20px;
     border-bottom: 1px solid #2C3A4E;
     
 }
-
 .news-grid-item-img-ineer{
     width: 100%;
     overflow:hidden;
@@ -361,7 +315,6 @@ td.payment-grate:before{
     transition: all 0.5s;
     -ms-transition: all 0.5s;
     -webkit-transition: all 0.5s;
-
 }
 .news-grid-item-img-ineer:hover .news-grid-item-div{
     transform: scale(1.04);
@@ -401,7 +354,6 @@ td.payment-grate:before{
     display: flex;
     position: relative;
 }
-
 .news-sec-entry-hdr-cntlr .sec-entry-hdr {
     margin-left: initial;
     max-width: 500px;
@@ -447,12 +399,6 @@ td.payment-grate:before{
     max-width:70px;
 }
 
-
-
-
-
-
-
 @media(max-width:1199px){
     /*hm-banner-sec*/
     .hm-bnr-cntlr {
@@ -472,14 +418,7 @@ td.payment-grate:before{
         padding-right: 0px;
     }
 
-
-
-
-
-
-
-
-/*best-site-selection-sec*/
+    /*best-site-selection-sec*/
     tbody.tbl-bdy tr td.best-site-thumbnail{
         padding-left: 20px;
     }
@@ -499,23 +438,6 @@ td.payment-grate:before{
     .more-btn a{
         font-size:15px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /*Poker-Strategy-Tools-sec*/
     .pk-strtgy-tls-lft-img {
         height: 520px;
@@ -549,27 +471,24 @@ td.payment-grate:before{
     .fl-prev-next{
         top:5px;
     }
-
 }
 
 @media(max-width:991px){
 
-
     /* width */
-.xs-mobile-menu ::-webkit-scrollbar {
-  width: 4px;
-}
-/* Track */
-.xs-mobile-menu ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 4px #757575;
-  border-radius: 10px;
-}
-/* Handle */
-.xs-mobile-menu ::-webkit-scrollbar-thumb {
-  background: #FF1C1C; 
-  border-radius: 10px;
-}
-
+    .xs-mobile-menu ::-webkit-scrollbar {
+      width: 4px;
+    }
+    /* Track */
+    .xs-mobile-menu ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 4px #757575;
+      border-radius: 10px;
+    }
+    /* Handle */
+    .xs-mobile-menu ::-webkit-scrollbar-thumb {
+      background: #FF1C1C; 
+      border-radius: 10px;
+    }
     /*hm-banner-sec*/
     .hm-bnr-img {
         max-width: 365px;
@@ -591,70 +510,56 @@ td.payment-grate:before{
         width: 50%;
     }
 
+    /*best-site-selection-sec*/
+    tbody.tbl-bdy tr {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-
-/*best-site-selection-sec*/
-tbody.tbl-bdy tr {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-td.best-site-thumbnail {
-    width: 40%;
-}
-.site-bonus-btn .fl-btn {
-  min-width: 190px;
-}
-tbody.tbl-bdy tr td.bst-site-des {
-    width: 60%;
-    display: flex;
-    align-items: center;
-}
-
-thead.tbl-thead {
-    display: none;
-}
-
-td.payment-grate {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-}
-.payment-grate-inner{
-    width:100%;
-}
-td.payment-grate:after{
-    display: none;
-}
-td.site-bonus {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-td.site-bonus {
-    width: 30%;
-}
-
-td.play-btn {
-    width: 40%;
-}
-.best-site-selection-sec {
-    padding-bottom: 110px;
-}
-.table-dsc {
-    margin-bottom: 30px;
-}
-
-
-
-
-
-
-
-
+    td.best-site-thumbnail {
+        width: 40%;
+    }
+    .site-bonus-btn .fl-btn {
+      min-width: 190px;
+    }
+    tbody.tbl-bdy tr td.bst-site-des {
+        width: 60%;
+        display: flex;
+        align-items: center;
+    }
+    thead.tbl-thead {
+        display: none;
+    }
+    td.payment-grate {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+    }
+    .payment-grate-inner{
+        width:100%;
+    }
+    td.payment-grate:after{
+        display: none;
+    }
+    td.site-bonus {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    td.site-bonus {
+        width: 30%;
+    }
+    td.play-btn {
+        width: 40%;
+    }
+    .best-site-selection-sec {
+        padding-bottom: 110px;
+    }
+    .table-dsc {
+        margin-bottom: 30px;
+    }
 
     /*Poker-Strategy-Tools-sec*/
     .Poker-Strategy-Tools-sec {
@@ -681,23 +586,6 @@ td.play-btn {
         margin-left: auto;
         margin-right: auto;
     }
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     /*news-section*/
     .news-grid .slick-list.draggable {
@@ -737,27 +625,14 @@ td.play-btn {
         margin-left: auto;
         margin-right: auto;
     }
-
-
-.more-btn a {
-    font-size: 14px;
-}
-.more-btn a:after{
-    height:26px;
-    width:20px;
-    bottom:-45px;
-}
-
-
-
-
-
-
-
-
-
-
-
+    .more-btn a {
+        font-size: 14px;
+    }
+    .more-btn a:after{
+        height:26px;
+        width:20px;
+        bottom:-45px;
+    }
 
     /*Poker-Strategy-Tools-sec*/
     .Poker-Strategy-Tools-sec {
@@ -787,16 +662,6 @@ td.play-btn {
         font-size: 14px;
     }
 
-
-
-
-
-
-
-
-
-
-
     /*news-section*/
     .news-grid .slick-list.draggable {
         padding-right: 40px;
@@ -818,59 +683,51 @@ td.play-btn {
     .hm-banner {
         padding-top: 180px;
     }
-
-
-/*best-site-selection-sec*/
-
-td.best-site-thumbnail a img {
-    max-height: 70px;
-    width: auto;
-}
-td.best-site-thumbnail a {
-    max-width: 190px;
-    width:100%;
-}
-.payment-grt-cntlr {
-    max-width: 75px;
-    height: 75px;
-}
-.payment-grt-cntlr span {
-    font-size: 18px;
-}
-td.payment-grate{
-    width:25%;
-}
-td.site-bonus {
-    width: 25%;
-}
-td.site-bonus .site-bonus-lft span {
-    font-size: 13px;
-}
-td.site-bonus .site-bonus-lft strong {
-    font-size: 18px;
-    margin-bottom: 0;
-}
-td.play-btn {
-    width: 50%;
-}
-.site-reting span img {
-    max-width: 18px;
-}
-.site-reting {
-    width: 130px;
-    margin-bottom: 15px;
-}
-.table-dsc {
-    margin-bottom: 20px;
-}
-.best-site-selection-sec {
-    padding-bottom: 90px;
-}
-
-
-
-
-
+    /*best-site-selection-sec*/
+    td.best-site-thumbnail a img {
+        max-height: 70px;
+        width: auto;
+    }
+    td.best-site-thumbnail a {
+        max-width: 190px;
+        width:100%;
+    }
+    .payment-grt-cntlr {
+        max-width: 75px;
+        height: 75px;
+    }
+    .payment-grt-cntlr span {
+        font-size: 18px;
+    }
+    td.payment-grate{
+        width:25%;
+    }
+    td.site-bonus {
+        width: 25%;
+    }
+    td.site-bonus .site-bonus-lft span {
+        font-size: 13px;
+    }
+    td.site-bonus .site-bonus-lft strong {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    td.play-btn {
+        width: 50%;
+    }
+    .site-reting span img {
+        max-width: 18px;
+    }
+    .site-reting {
+        width: 130px;
+        margin-bottom: 15px;
+    }
+    .table-dsc {
+        margin-bottom: 20px;
+    }
+    .best-site-selection-sec {
+        padding-bottom: 90px;
+    }
 
     /*Poker-Strategy-Tools-sec*/
     .Poker-Strategy-Tools-sec {
@@ -892,8 +749,6 @@ td.play-btn {
         background-size: 14px;
     }
 
-
-
     /*news-section*/
     .news-grid-item-img {
         height: 325px;
@@ -909,62 +764,48 @@ td.play-btn {
         margin-right: 20px;
     }
 }
+
 @media(max-width:479px){
 
+    tbody.tbl-bdy tr td.best-site-thumbnail {
+        display: flex;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+    }
 
+    tbody.tbl-bdy tr td.bst-site-des {
+        padding-bottom: 15px;
+        padding-top: 15px;
+        padding-right: 0px;
+    }
 
-tbody.tbl-bdy tr td.best-site-thumbnail {
-    display: flex;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-}
+    .site-bonus-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    td.payment-grate{
+        width: 50%;
+    }
+    td.site-bonus{
+        width:50%;
+    }
+    td.play-btn{
+        width:100%;
+        padding-right:0;
+    }
+    td.best-site-thumbnail a{
+        max-width:100px;
+        height:100px;
+    }
 
-tbody.tbl-bdy tr td.bst-site-des {
-    padding-bottom: 15px;
-    padding-top: 15px;
-    padding-right: 0px;
-}
-
-.site-bonus-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-td.payment-grate{
-    width: 50%;
-}
-td.site-bonus{
-    width:50%;
-}
-td.play-btn{
-    width:100%;
-    padding-right:0;
-}
-td.best-site-thumbnail a{
-    max-width:100px;
-    height:100px;
-}
-
-td.best-site-thumbnail a img{
-    max-height:52px;
-}
-
-
-
-
-
-
-
-
+    td.best-site-thumbnail a img{
+        max-height:52px;
+    }
     /*Poker-Strategy-Tools-sec*/
-
-
-
-
-
     /*news-section*/
     .news-grid .slick-list.draggable {
         padding-right: 50px;

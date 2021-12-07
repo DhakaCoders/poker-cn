@@ -32,7 +32,7 @@ header.header {
     width: 100%;
 }
 .logo a {
-    max-width: 170px;
+    max-width: 190px;
     display: inline-block;
     width: 100%;
     vertical-align: baseline;
@@ -43,10 +43,12 @@ header.header {
 .logo {
     margin-top: -23px;
 }
-.hdr-main-menu {
+.home .hdr-main-menu {
     margin-top: 19px;
+}
+.hdr-main-menu {
+    margin-top: 13px;
 }	
-
 nav.main-nav ul{
 	 
 }
@@ -116,7 +118,6 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu {
     -ms-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.15%);
      -webkit-box-shadow: 0 2px 12px 0 rgb(0 0 0 / 15%); 
 }
-
 nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu {
     transform: scale3d(1,1,1);
     -ms-transform: scale3d(1,1,1);
@@ -129,18 +130,28 @@ nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu {
 nav.main-nav > ul > li.current-menu-item > a{
 
 }
-
 nav.main-nav > ul > li.menu-item-has-children > a{
 
 }
-
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 	
 }
 .hdr-rgt-btn {
     padding-left: 20px;
 }
-.hdr-rgt-btn .hdr-btn {
+.hdr-rgt-btn .hdr-btn{
+    vertical-align: baseline;
+    color: #fff;
+    text-decoration: none;
+    min-width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 15px;
+    border: 1px solid #FF1C1C;
+    line-height: 1;
+}
+.home .hdr-rgt-btn .hdr-btn {
     vertical-align: baseline;
     color: #fff;
     text-decoration: none;
@@ -167,174 +178,6 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:last-child {
 .hdr-rgt-btn .hdr-btn:hover {
     background: #FF1C1C;
 }
-
-
-
-
-
-
-
-
-
-
-
-/*nav.main-nav > ul{
-	display: flex;
-	align-items: center;
-}
-nav.main-nav > ul > li{
-	padding-left: 30px;
-	padding-right: 30px;
-	position: relative;
-}
-nav.main-nav > ul > li:last-child{
-	padding-right: 0;
-}
-nav.main-nav > ul > li > a{
-	display: inline-block;
-	vertical-align: baseline;
-	text-decoration: none;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 22px;
-	line-height: 1;
-	font-weight: 600;
-	font-family: 'Barlow Condensed', sans-serif;
-	padding-bottom: 10px;
-	position: relative;
-}
-nav.main-nav > ul > li > a:hover{
-	color: #E63312;
-}
-nav.main-nav > ul > li > a:after{
-	content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    bottom: 0;
-    transform-origin: left;
-    width: 0;
-    height: 3px;
-    transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    background: #E63312;
-}
-nav.main-nav > ul > li > a:hover:after{
-	width: 17px;
-}
-
-nav.main-nav > ul > li.current-menu-item > a:after{
-	width: 17px;
-}
-
-nav.main-nav > ul > li.menu-item-has-children > a{
-	padding-right: 22px;
-    position: relative;
-}
-nav.main-nav > ul > li.menu-item-has-children > a:before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 8px;
-    background-image: url('../images/hdr-lang-arrow.svg');
-	background-repeat: no-repeat!important;
-	height: 8px;
-	width: 12px;
-    transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-}
-
-nav.main-nav > ul > li.menu-item-has-children:hover > a:before{
-    transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    -webkit-transform: rotate(-180deg);
-    -o-transform: rotate(-180deg);
-    background-image: url('../images/hdr-lang-arrow-hover.svg');
-}
-
-nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
-	position: absolute;
-    top: 100%;
-    left: 0;
-    background: #fff;
-    z-index: -9999;
-    width: 200px;
-    padding: 0;
-    transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transform: scale3d(1,0,1);
-    -ms-transform: scale3d(1,0,1);
-    -webkit-transform: scale3d(1,0,1);
-    -o-transform: scale3d(1,0,1);
-    transform-origin: top;
-    opacity: 0;
-    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 15%);
-    -ms-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.15%);
-    -webkit-box-shadow: 0 2px 12px 0 rgb(0 0 0 / 15%);
-}
-
-nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu {
-    transform: scale3d(1,1,1);
-    -ms-transform: scale3d(1,1,1);
-    -webkit-transform: scale3d(1,1,1);
-    -o-transform: scale3d(1,1,1);
-    opacity: 1;
-    visibility: visible;
-    z-index: 9999;
-}
-nav.main-nav > ul > li.menu-item-has-children:hover a:after{
-	content: none;
-}
-
-nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li {
-    border-bottom: 1px solid #E63312;
-    position: relative;
-}
-nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:last-child{
-	border-bottom: 0;
-}
-nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a {
-    font-size: 19px;
-    display: block;
-    padding: 8px 17px;
-    text-decoration: none;
-    color: #E63312;
-    text-transform: uppercase;
-    font-weight: 600;
-	font-family: 'Barlow Condensed', sans-serif;
-	padding-left: 30px;
-}
-
-nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a:hover{
-	opacity: 0.7;
-}
-nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:after {
-    position: absolute;
-    content: '';
-    background: #E63312;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 2px;
-    height: 0;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
-}
-nav.main-nav > ul > li.menu-item-has-children ul.sub-menu > li:hover:after {
-    height: 100%;
-}
-nav.main-nav > ul > li.menu-item-has-children:hover a{
-    color: #E63312;
-}*/
-
-
 .hamburgar{
     height: 40px;
     width: 40px;
@@ -365,7 +208,6 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 .hamburger-icon span:nth-child(3) {
     top: 14px;
 }
-
 body.allWork .hamburger-icon span:nth-child(1) {
     top: 7px;
     left: 0;
@@ -381,7 +223,6 @@ body.allWork .hamburger-icon span:nth-child(2){
     content: none;
     display: none;
 }
-
 .allWork .bdoverlay {
     z-index: 999;
     opacity: 1;
@@ -450,7 +291,6 @@ body.allWork {
     nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a{
         font-size:12px;
     }
-
 }
 
 @media(max-width:991px){
@@ -576,5 +416,10 @@ body.allWork {
 
     .xs-contact-btn {
         text-align: center;
+    }
+}
+@media(max-width:575px){
+    .header-inr{
+        padding-bottom:15px;
     }
 }
