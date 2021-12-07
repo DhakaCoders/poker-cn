@@ -1,0 +1,104 @@
+.block-1010{
+    max-width: 1010px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.default-page-con h1,
+.dfp-promo-module-title,
+.default-page-con h2,
+.default-page-con h3,
+.default-page-con h4,
+.default-page-con h5{
+	margin-bottom: 26px;
+	line-height: 1.2;
+	font-family: 'GlueGun';
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.default-page-con .dfp-text-module p,
+.default-page-con .dfp-text-module h3{
+	text-align: center;
+}
+.default-page-con p {
+    margin-bottom: 30px;
+}
+
+
+.innerpage-con-wrap {
+    padding-top: 5px;
+}
+.fl-dft-lftimg-rgtdes {
+	margin: 0 0;
+	padding: 75px 0;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.fl-dft-lftimg-rgtdes-lft{
+	height: 500px;
+}
+.fl-dft-lftimg-rgtdes-lft-img-scale{
+	position: relative;
+	overflow: hidden;
+}
+.fl-dft-lftimg-rgtdes-lft-img-inr{
+	width: 100%;
+	height: 100%;
+}
+.fl-dft-lftimg-rgtdes-lft{
+	width: 47%;
+	position: relative;
+}
+.fl-dft-lftimg-rgtdes-rgt {
+	width: 53%;
+	position: relative;
+}
+.fl-dft-lftimg-rgtdes-rgt {
+	padding-left: 70px;
+	padding-bottom: 5px;
+	padding-top: 0;
+}
+.fl-dft-lftimg-rgtdes-rgt p:last-child{
+	margin-bottom: 0;
+}
+
+
+.fl-dft-lftimg-rgtdes-lft.has-inline-bg img,
+.fl-dft-testi-controller.has-inline-bg img{
+	display: none;
+}
+.fl-dft-lftimg-rgtdes-lft div.inline-bg{
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+.fl-dft-lftimg-rgtdes-lft.has-inline-bg div.inline-bg{
+	display: block;
+}
+.fl-dft-lftimg-rgtdes-lft-img img{
+	height: 100%;
+	width: 100%;
+}
+.has-inline-bg .fl-dft-lftimg-rgtdes-lft-img{
+	display: none;
+}
+
+
+
+/*-- left des right img customize---*/
+.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes{
+	padding-bottom: 75px;
+}
+.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-lft{
+	order: 2;
+}
+.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt{
+	float: left;
+	padding-left: 0;
+	padding-right: 80px;
+}
+
+
+
+

@@ -1,6 +1,13 @@
 .footer-cntlr {
     text-align: center;
 }
+.ftr-logo a{
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    vertical-align: baseline;
+}
 footer.footer-wrp {
     background: #16202F;
     padding-top:32px;
