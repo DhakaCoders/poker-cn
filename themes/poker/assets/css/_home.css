@@ -13,8 +13,8 @@
     flex-wrap: wrap;
     position: relative;
     padding-top: 118px;
-    padding-bottom: 140px;
-    z-index:11;
+    padding-bottom: 80px;
+    z-index:5;
 }
 .hm-banner {
     padding-top: 210px;
@@ -87,6 +87,7 @@ thead.tbl-thead tr th span {
     font-size: 16px;
     letter-spacing: 0.255em;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 td.best-site-thumbnail a {
@@ -145,13 +146,16 @@ tbody.tbl-bdy tr td {
     margin-bottom: 17px!important;
     padding-top: 35px;
     padding-bottom: 35px;
+    position: relative;
 }
 thead.tbl-thead tr th {
     text-align: center;
     padding-bottom: 40px;
 }
-.best-site-title{
-    font-size:22px;
+.best-site-title {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
 }
 .table-dsc {
     margin-bottom: 50px;
@@ -195,6 +199,7 @@ td.site-bonus .site-bonus-lft strong {
     margin-bottom: 7px;
     font-size: 22px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 td.payment-grate {
     width: 16%;
@@ -223,7 +228,7 @@ td.payment-grate:after {
     -webkit-transform: translateY(-50%);
     left: 0;
 }
-td.payment-grate:before{
+td.site-bonus:before{
     content: "";
     position: absolute;
     height: 75%;
@@ -233,13 +238,14 @@ td.payment-grate:before{
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    right: 0;
+    left: 0;
 }
 .more-btn a {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
     letter-spacing: 0.255em;
+    text-transform: uppercase;
 }
 
 .more-btn {
@@ -305,6 +311,7 @@ td.payment-grate:before{
     font-size: 16px;
     letter-spacing: 0.255em;
     font-weight: 400;
+    text-transform: uppercase;
 }
 .best-site-cart-dsc-cntlr ul li:first-child {
     background: transparent;
@@ -357,15 +364,17 @@ td.payment-grate:before{
     width: 100%;
     height: 100%;
 }
-
+.pog-site-bonus-btn a {
+    min-width: 100%;
+}
 .pog-site-bonus {
-    width: 34%;
+    width: 33%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .pog-site-btn {
-    width: 16%;
+    width: 17%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -413,6 +422,7 @@ td.payment-grate:before{
     margin-bottom: 7px;
     font-size: 22px;
     font-weight: 600;
+    text-transform: capitalize;
 }
 .POG-site-bonus-lft {
     max-width: 176px;
@@ -450,7 +460,7 @@ td.payment-grate:before{
 
 /*pk-strtgy-tls-sec*/
 .sec-entry-hdr.text-center {
-    padding-bottom: 80px;
+    padding-bottom: 60px;
 }
 .Poker-Strategy-Tools-sec {
     padding-top: 95px;
@@ -485,6 +495,7 @@ td.payment-grate:before{
     color: #fff;
     text-decoration: none;
     margin-right: 22px;
+    text-transform: capitalize;
 }
 .pk-strtgy-tls-des a:hover{
     color:#FF1C1C;
@@ -611,14 +622,15 @@ td.payment-grate:before{
     cursor: pointer;
 }
 .fl-prev-next i:hover svg.slider-lft-arrow-svg{
-    transform: translateX(-10px);
+    fill:#fff!important;
 }
 .fl-prev-next i:hover svg.slider-rgt-arrow-svg{
-    transform: translateX(10px);
+    fill:#fff!important;
 }
 .fl-prev svg.slider-lft-arrow-svg,
 .fl-next .slider-rgt-arrow-svg{
     max-width:70px;
+    fill: #FF282E;
 }
 
 @media(max-width:1199px){
@@ -698,9 +710,9 @@ td.payment-grate:before{
     .pog-site-price-grt{
         max-width:155px;
     }
-    .pog-site-bonus-btn .fl-btn{
+   /* .pog-site-bonus-btn .fl-btn{
         min-width:170px;
-    }
+    }*/
     .pog-site-bonus {
         width: 32%;
     }
@@ -882,6 +894,7 @@ td.payment-grate:before{
 .pog-site-bonus-btn .fl-btn{
     margin-right:20px;
     margin-bottom: 0!important;
+    min-width:200px;
 }
 
     .pog-site-des {
