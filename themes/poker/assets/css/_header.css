@@ -13,7 +13,7 @@ header.header {
 }
 .header-inr{
 	display: flex;
-	padding-top:39px;
+	padding-top: 33px;
     padding-bottom: 30px;
 }
 .home header.header {
@@ -29,7 +29,7 @@ header.header {
 .home .logo a {
     display: inline-block;
     vertical-align: baseline;
-    max-width: 270px;
+    max-width: 250px;
     width: 100%;
 }
 .logo a {
@@ -140,6 +140,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 }
 .hdr-rgt-btn {
     padding-left: 20px;
+    padding-top: 5px;
 }
 .hdr-rgt-btn .hdr-btn{
     vertical-align: baseline;
@@ -157,11 +158,11 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
     vertical-align: baseline;
     color: #fff;
     text-decoration: none;
-    min-width: 200px;
+    min-width: 190px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 23px 15px;
+    padding: 20px 15px;
     border: 1px solid #FF1C1C;
     line-height: 1;
     text-transform: capitalize;
