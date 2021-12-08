@@ -13,10 +13,12 @@
     flex-wrap: wrap;
     position: relative;
     padding-top: 118px;
-    padding-bottom: 180px;
+    padding-bottom: 140px;
+    z-index:11;
 }
 .hm-banner {
     padding-top: 210px;
+    position: relative;
 }
 .hm-bnr-title,
 .sec-entry-hdr-title{
@@ -29,7 +31,56 @@
     margin-bottom: 40px;
     padding-right: 40px;
 }
+.has-vdo .hm-video-cntlr{
+    display: block;
+}
+.has-vdo .hm-bnr-img-ctlr{
+    display: none;
+}
+.hm-video-cntlr {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: 2;
+    overflow: hidden;
+}
+.hm-banner-bg-black {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 1;
+}
+.hm-bnr-img-ctlr{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+#bnr-vdo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+}
 
+.hm-bnr-img-ctlr .hm-banner-bg{
+    height: 100%;
+    width:100%;
+    background-color: #001825;
+}
 /*best-site-selection*/
 
 thead.tbl-thead tr th span {
@@ -222,6 +273,7 @@ td.payment-grate:before{
 }
 .best-site-selection-sec{
     padding-bottom:130px;
+    padding-top:40px;
 }
 .tbl-bdy tr:not(:last-child) {
     border-bottom: 17px solid #001825;

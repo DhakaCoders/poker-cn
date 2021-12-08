@@ -3,6 +3,7 @@ header.header {
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index:11;
 }
 .home header.header {
     background-image:none;
@@ -43,12 +44,12 @@ header.header {
 .logo {
     margin-top: -23px;
 }
-.home .hdr-main-menu {
-    margin-top: 19px;
+.home nav.main-nav > ul{
+    padding-top: 19px;
 }
-.hdr-main-menu {
-    margin-top: 13px;
-}	
+nav.main-nav > ul {
+    padding-top: 13px;
+}
 nav.main-nav ul{
 	 
 }
@@ -70,9 +71,10 @@ nav.main-nav > ul > li{
 	padding: 0 20px;
 }
 nav.main-nav > ul > li > a {
-    padding-right: 21px;
+    padding-right: 18px;
     padding-bottom: 20px;
     position: relative;
+    text-transform: capitalize;
 }
 nav.main-nav > ul > li.menu-item-has-children > a:after {
     content: "";
@@ -162,6 +164,8 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
     padding: 23px 15px;
     border: 1px solid #FF1C1C;
     line-height: 1;
+    text-transform: capitalize;
+    font-weight: 600;
 }
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a {
     font-size: 13px;
