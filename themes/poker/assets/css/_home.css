@@ -257,7 +257,7 @@ td.payment-grate:before{
 .best-site-cart-dsc-cntlr ul li:first-child {
     background: transparent;
     padding-bottom: 23px;
-    padding-top: 23px;
+    padding-top: 0px;
 }
 .best-site-cart-dsc-cntlr ul li{
     background: #16202F;
@@ -278,6 +278,9 @@ td.payment-grate:before{
 }
 .best-site-cart-dsc-cntlr ul li:nth-child(6) .pog-site-thumbnail a {
     background: #fcbe2c;
+}
+.best-site-cart-dsc {
+    margin-bottom: 50px;
 }
 .bst-site-cart-item {
     display: flex;
