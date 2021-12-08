@@ -459,12 +459,15 @@ td.site-bonus:before{
 
 
 /*pk-strtgy-tls-sec*/
-.sec-entry-hdr.text-center {
+.sec-entry-hdr{
+    padding-bottom:60px;
+}
+.Poker-Strategy-Tools-sec  .sec-entry-hdr{
     padding-bottom: 60px;
 }
 .Poker-Strategy-Tools-sec {
-    padding-top: 95px;
-    padding-bottom: 129px;
+    padding-top: 75px;
+    padding-bottom: 110px;
     background: #16202F;
 }
 .Poker-Strategy-Tools-sec-cntlr{
@@ -598,11 +601,11 @@ td.site-bonus:before{
     top: 9px;
 }
 .news-section {
-    padding-top: 190px;
-    padding-bottom: 130px;
+    padding-top: 170px;
+    padding-bottom: 120px;
 }
 .news-grid-item-title{
-    font-size:23px;
+    font-size:21px;
 }
 .news-grid-item-title a {
     text-decoration: none;
