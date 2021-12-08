@@ -1,5 +1,8 @@
-.block-1010{
-    max-width: 1010px;
+.default-page-con{
+	padding-bottom: 30px
+}
+.block-860{
+    max-width: 860px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -10,11 +13,12 @@
 .default-page-con h3,
 .default-page-con h4,
 .default-page-con h5{
-	margin-bottom: 26px;
+	margin-bottom: 20px;
 	line-height: 1.2;
 	font-family: 'GlueGun';
 	font-weight: 400;
 	text-transform: uppercase;
+	letter-spacing: 1px
 }
 .default-page-con .dfp-text-module p,
 .default-page-con .dfp-text-module h3{
@@ -33,7 +37,7 @@
 }
 .fl-dft-lftimg-rgtdes {
 	margin: 0 0;
-	padding: 75px 0;
+	padding: 60px 0;
 	display: flex;
 	align-items: center;
 	position: relative;

@@ -23,8 +23,7 @@
 }
 footer.footer-wrp {
     background: #16202F;
-    padding-top:32px;
-    padding-bottom:10px;
+    padding-top: 23px;
 }
 @media(max-width:1199px){
 	.ftr-logo a {
