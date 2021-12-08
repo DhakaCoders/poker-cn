@@ -284,6 +284,7 @@ td.payment-grate:before{
 }
 .bst-site-cart-item {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .pog-site-thumbnail {
@@ -295,12 +296,14 @@ td.payment-grate:before{
     width: auto;
 }
 .pog-site-price-grt {
-    width: 16%;
+    max-width: 190px;
     border-left: 1px solid #2C3A4E;
     border-right: 1px solid #2C3A4E;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .pog-site-bonus {
@@ -308,6 +311,12 @@ td.payment-grate:before{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.pog-site-btn {
+    width: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .pog-site-thumbnail a {
     vertical-align: baseline;
@@ -354,25 +363,20 @@ td.payment-grate:before{
     font-weight: 600;
 }
 .POG-site-bonus-lft {
-    width: 47%;
+    max-width: 176px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-left: 20px;
     padding-right: 20px;
+    width: 100%;
 }
-.pog-site-bonus-btn {
-    width: 53%;
-}
+
 .pog-site-bonus-btn a:not(:last-child) {
     margin-bottom: 19px;
 }
-.pog-site-bonus-btn a {
-    max-width: 100%;
-    width: 100%;
-    min-width: initial;
-}
+
 
 
 
@@ -604,6 +608,64 @@ td.payment-grate:before{
     .more-btn a{
         font-size:15px;
     }
+
+
+    /*best-site-selection-sec-2nd*/
+    .pog-site-price-grt-title{
+        width: 21%;
+    }
+    .pog-site-bonus-title {
+        width: 29%;
+    }
+    .pog-site-des {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .best-site-cart-dsc-cntlr ul li {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .pog-site-thumbnail a img {
+        max-height: 80px;
+    }
+
+    .pog-site-price-grt-cntlr {
+        max-width: 80px;
+        height: 80px;
+    }
+
+    .POG-site-bonus-lft {
+        width: 44%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+    .pog-site-price-grt{
+        max-width:155px;
+    }
+    .pog-site-bonus-btn .fl-btn{
+        min-width:170px;
+    }
+    .pog-site-bonus {
+        width: 32%;
+    }
+.pog-site-btn{
+    width:18%;
+}
+
+
+
+
+
+
+
+
+
+
+
     /*Poker-Strategy-Tools-sec*/
     .pk-strtgy-tls-lft-img {
         height: 520px;
@@ -727,6 +789,55 @@ td.payment-grate:before{
         margin-bottom: 30px;
     }
 
+
+
+
+    /*best-site-selection-2nd*/
+    .best-site-cart-dsc-cntlr ul li:first-child{
+        display: none;
+    }
+
+    .pog-site-thumbnail a {
+        margin-bottom: 15px;
+    }
+    .site-reting{
+        margin-bottom:10px;
+    }
+    .pog-site-thumbnail {
+        width: 70%;
+    }
+
+    .pog-site-bonus {
+        width: 30%;
+        flex-wrap: wrap;
+        border-left: 1px solid #2C3A4E;
+    }
+    .pog-site-price-grt {
+        height: initial;
+        border: none;
+    }
+
+    .POG-site-bonus-lft {
+        width: 100%;
+    }
+    .pog-site-btn {
+    width: 100%;
+    margin-top:15px;
+        justify-content: left;
+        border-top: 1px solid #2C3A4E;
+        padding-top:20px;
+}
+.pog-site-bonus-btn .fl-btn{
+    margin-right:20px;
+    margin-bottom: 0!important;
+}
+
+    .pog-site-des {
+    }
+
+
+
+
     /*Poker-Strategy-Tools-sec*/
     .Poker-Strategy-Tools-sec {
         padding-top: 80px;
@@ -799,6 +910,43 @@ td.payment-grate:before{
         width:20px;
         bottom:-45px;
     }
+
+    /*best-site-selsection-2nd*/
+    .pog-site-thumbnail a img {
+        max-height: 55px;
+    }
+.pog-site-thumbnail {
+    width: 76%;
+}
+.pog-site-bonus {
+    width: 24%;
+}
+.best-site-cart-dsc-cntlr ul li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.pog-site-des {
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.pog-site-price-grt-cntlr {
+    max-width: 70px;
+    height: 70px;
+}
+.POG-site-bonus-lft strong{
+    font-size:20px;
+    margin-bottom:0;
+}
+.POG-site-bonus-lft span{
+    font-size:14px;
+}
+.POG-site-bonus-lft {
+    padding-right: 0;
+}
+.pog-site-price-grt {
+    padding-left: 12px;
+}
+
 
     /*Poker-Strategy-Tools-sec*/
     .Poker-Strategy-Tools-sec {
@@ -895,6 +1043,41 @@ td.payment-grate:before{
         padding-bottom: 90px;
     }
 
+/*best-site-selsection-2nd*/
+.pog-site-thumbnail {
+    width: 100%;
+}
+
+.pog-site-bonus {
+    width: 58%;
+    border-left: none;
+        border-top: 1px solid #2C3A4E;
+}
+
+.pog-site-btn {
+    width: 42%;
+    margin-top:0;
+}
+
+.POG-site-bonus-lft {
+    width: 50%;
+}
+
+.pog-site-price-grt {
+    max-width: 90px;
+    padding-left: 0;
+}
+
+.pog-site-bonus-btn .fl-btn {
+    margin-bottom: 10px!important;
+}
+
+
+
+
+
+
+
     /*Poker-Strategy-Tools-sec*/
     .Poker-Strategy-Tools-sec {
         padding-top: 50px;
@@ -976,6 +1159,45 @@ td.payment-grate:before{
     .news-grid .slick-list.draggable {
         padding-right: 50px;
     }
+
+
+/*best-site-selection-2nd*/
+.pog-site-bonus-btn a:not(:last-child){
+    margin-bottom:0;
+}
+.pog-site-des {
+    max-width: 60%;
+    padding-right: 0;
+    width: 100%;
+}
+    .pog-site-thumbnail {
+    padding-bottom: 15px;
+}
+
+.pog-site-thumbnail a {
+    max-width: 150px;
+    height: 150px;
+}
+
+.pog-site-thumbnail a img {
+    height: 50px;
+}
+
+.pog-site-bonus {
+    width: 100%;
+    border-top: 1px solid #2C3A4E;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.pog-site-btn {
+    width: 100%;
+    border-top: none;
+}
+
+.pog-site-bonus-btn .fl-btn {
+    width: 100%;
+}
 }
 
 @media(max-width:359px){
@@ -983,6 +1205,13 @@ td.payment-grate:before{
         width:100%;
     }
     tbody.tbl-bdy tr td.bst-site-des{
-        width:100%;
+        max-width:100%;
+    }
+    .pog-site-thumbnail {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+    .pog-site-des{
+        max-width:100%;
     }
 }
