@@ -265,7 +265,7 @@ function bannerheight(){
     windowHeight2 = windowHeight;
   }
   if (windowWidth > 767){
-    // $('.hm-bnr-cntlr').css('height', windowHeight2);
+    $('.hm-bnr-cntlr').css('height', windowHeight);
   }
 }
 bannerheight();
