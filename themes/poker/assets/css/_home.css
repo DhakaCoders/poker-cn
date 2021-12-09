@@ -1369,10 +1369,22 @@ td.site-bonus:before{
     .pog-site-bonus-btn{
         flex-wrap: wrap;
     }
-
+    .best-site-des {
+        padding-right: 20px;
+    }
+    .pog-site-thumbnail,
+    .bst-site-des{
+        text-align: center;
+    }
     .pog-site-bonus-btn .fl-btn{
         min-width:initial;
         width:100%;
+    }
+    .pog-site-thumbnail a,
+    .site-reting,
+    td.best-site-thumbnail a{
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
