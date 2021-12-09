@@ -441,6 +441,7 @@ body.allWork {
     }
     .xs-contact-btn a {
         background: #FF1C1C;
+        border: 2px solid #ff1c1c;
     }
     .xs-contact-btn a:hover{
         background:transparent;

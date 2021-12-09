@@ -593,7 +593,7 @@ td.site-bonus:before{
 .news-sec-entry-hdr-cntlr .sec-entry-hdr {
     margin-left: initial;
     max-width: 500px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 .fl-prev-next {
     position: absolute;
@@ -923,7 +923,7 @@ td.site-bonus:before{
         padding-top: 80px;
         padding-bottom: 100px;
     }
-    .sec-entry-hdr.text-center {
+    .sec-entry-hdr{
         padding-bottom: 50px;
 
     }
@@ -1062,7 +1062,7 @@ td.site-bonus:before{
     .pk-strtgy-tls-des-btn svg {
         max-width: 45px;
     }
-    .sec-entry-hdr.text-center {
+    .sec-entry-hdr {
         padding-bottom: 30px;
     }
     .pk-strtgy-tls-lft-img span {
@@ -1193,7 +1193,7 @@ td.site-bonus:before{
         padding-top: 50px;
         padding-bottom: 50px;
     }
-    .sec-entry-hdr.text-center {
+    .sec-entry-hdr{
         padding-bottom: 20px;
     }
     .pk-strtgy-tls-lft-img {
