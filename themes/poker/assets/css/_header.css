@@ -365,7 +365,7 @@ body.allWork {
         height: 11px;
         width: 17px;
         background-size: contain!important;
-        right: -35px;
+        right: 0;
         background-repeat: no-repeat!important;
     }
   
@@ -412,7 +412,7 @@ body.allWork {
         padding-bottom: 10px;
     }
     nav.main-nav > ul > li.menu-item-has-children > a {
-        padding-right: 0;
+        padding-right: 35px;
     }
     nav.main-nav > ul > li.menu-item-has-children > a:before{
         right: -30px;
@@ -452,7 +452,7 @@ body.allWork {
     .header-inr{
         padding-bottom:15px;
     }
-    .home .logo a {
+    .logo{
         max-width: 150px;
     }
     .xs-mobile-menu{
