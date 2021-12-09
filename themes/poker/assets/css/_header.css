@@ -250,7 +250,6 @@ body.allWork {
     right: 0;
     opacity: 1;
     z-index: 99999;
-    width: 375px;
 }
 .allWork .bdoverlay {
     z-index: 999;
@@ -283,7 +282,7 @@ body.allWork {
     transition: all 0.3s;
     padding: 30px 0;
     height: 100%;
-    max-width: 100%;
+    max-width: 375px;
     width: 100%;
 }
 
@@ -314,6 +313,9 @@ body.allWork {
 }
 
 @media(max-width:991px){
+    .home .logo a {
+        max-width: 170px;
+    }
     .logo {
          margin-top:0px; 
     }
@@ -449,5 +451,11 @@ body.allWork {
 @media(max-width:575px){
     .header-inr{
         padding-bottom:15px;
+    }
+    .home .logo a {
+        max-width: 150px;
+    }
+    .xs-mobile-menu{
+        max-width: 100%;
     }
 }
