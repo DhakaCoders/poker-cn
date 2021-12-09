@@ -44,9 +44,6 @@ header.header {
 .logo {
     margin-top: -23px;
 }
-.home nav.main-nav > ul{
-    padding-top: 19px;
-}
 nav.main-nav > ul {
     padding-top: 17px;
 }
@@ -153,16 +150,17 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
     padding: 18px 15px;
     border: 1px solid #FF1C1C;
     line-height: 1;
+    font-weight: 600;
 }
 .home .hdr-rgt-btn .hdr-btn {
     vertical-align: baseline;
     color: #fff;
     text-decoration: none;
-    min-width: 190px;
+    min-width: 170px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 15px;
+    padding: 18px 15px;
     border: 1px solid #FF1C1C;
     line-height: 1;
     text-transform: capitalize;

@@ -259,13 +259,13 @@ function bannerheight(){
   var windowWidth = $(window).width();
   var windowHeight = $(window).height();
   var windowHeight2 = 0;
-  if( windowHeight < 625 ){
+  if( windowHeight > 625 ){
     windowHeight2 = 625;
   }else{
     windowHeight2 = windowHeight;
   }
   if (windowWidth > 767){
-    $('.hm-bnr-cntlr').css('height', windowHeight);
+    $('.hm-bnr-cntlr').css('height', windowHeight2);
   }
 }
 bannerheight();
