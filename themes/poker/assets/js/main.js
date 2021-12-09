@@ -201,7 +201,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
     if( $('.newsSlider').length ){
     $('.newsSlider').slick({
       dots:false,
-      infinite: false,
+      infinite: true,
       autoplay: false,
       autoplaySpeed: 2000,
       speed: 300,
