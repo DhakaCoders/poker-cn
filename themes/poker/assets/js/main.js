@@ -211,7 +211,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       nextArrow: $('.fl-prev-next .fl-next'),
       responsive: [
         {
-          breakpoint:768,
+          breakpoint: 992,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,

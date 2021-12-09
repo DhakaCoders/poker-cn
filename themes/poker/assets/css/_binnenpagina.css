@@ -1,8 +1,8 @@
 .default-page-con{
 	padding-bottom: 30px
 }
-.block-860{
-    max-width: 860px;
+.block-910{
+    max-width: 910px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -90,7 +90,7 @@
 }
 /*-- left des right img customize---*/
 .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes{
-	padding-bottom: 75px;
+	padding-bottom: 80px;
 }
 .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-lft{
 	order: 2;
@@ -99,6 +99,9 @@
 	float: left;
 	padding-left: 0;
 	padding-right: 80px;
+}
+.dfp-text-module p{
+	font-size: 16px;
 }
 @media(max-width:1199px){
 	.fl-dft-lftimg-rgtdes-rgt{
@@ -134,9 +137,12 @@
 	    padding: 15px 20px;
 	    font-size: 15px;
 	}
-	.fl-dft-lftimg-rgtdes-lft, .fl-dft-lftimg-rgtdes-rgt {
-	    width: 100%;
+	.fl-dft-lftimg-rgtdes-lft{
+		width: 100%;
 	    margin-bottom: 30px;
+	} 
+	.fl-dft-lftimg-rgtdes-rgt {
+	    width: 100%;
 	}
 	.fl-dft-lftimg-rgtdes{
 		flex-wrap: wrap;
