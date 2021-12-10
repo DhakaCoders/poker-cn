@@ -1,62 +1,55 @@
 <?php get_header(); ?>
 <section class="innerpage-con-wrap">
+  <?php if( have_rows('content') ){ ?>
   <article class="default-page-con">
-    <div class="block">
-      <div class="fl-dft-overflow-module">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="fl-dft-lftimg-rgtdes fl-dft-rgtimg-lftdes clearfix">
-                <div class="fl-dft-lftimg-rgtdes-lft has-inline-bg">
-                  <div class="inline-bg" style="background-image: url(assets/images/dfp-img-01.jpg);"></div>
-                  <div class="fl-dft-lftimg-rgtdes-lft-img">
-                    <img src="assets/images/dfp-img-01.jpg">
-                  </div>  
-                </div>
-                <div class="fl-dft-lftimg-rgtdes-rgt">
-                  <h3>Lorem Ipsum dummy</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy text ever since the an unknown printer took a galley of type scrambled it to make a specimen book. It has survived not only five centuries, but the leap into electronic typesetting, unchanged. Lorem Ipsu simply dummy text of the printing typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy text ever since the an unknown printer took a galley of type  </p>
-                  <a href="#" class="fl-red-btn">Read More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <?php while ( have_rows('content') ) : the_row(); ?>
+    <?php 
+    if( get_row_layout() == 'fc_texteditor' ){ 
+    $fc_text = get_sub_field('fctexteditor');
+    ?>
     <div class="block">
       <div class="dfp-text-module">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="block-910">
-                <h3>Lorem Ipsum dummy</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy text ever since the an unknown printer took a galley of type scrambled it to make a specimen book. It has survived not only five centuries, but the leap into electronic typesetting,unchanged.Lorem Ipsu simply dummy text of the printing typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  </p>
+                <?php echo wpautop($fc_text); ?>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+    <?php 
+    }elseif( get_row_layout() == 'image_text' ){ 
+    $fc_afbeelding = get_sub_field('fc_image');
+    $imgsrc = cbv_get_image_src($fc_afbeelding);
+    $imgtag = cbv_get_image_tag($fc_afbeelding);
+    $fc_tekst = get_sub_field('fc_text');
+    $fc_link = get_sub_field('link');
+    $positie_afbeelding = get_sub_field('position_image');
+    $imgposcls = ( $positie_afbeelding == 'right' ) ? ' fl-dft-rgtimg-lftdes' : '';
+    ?>
     <div class="block">
       <div class="fl-dft-overflow-module">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <div class="fl-dft-lftimg-rgtdes clearfix">
+              <div class="fl-dft-lftimg-rgtdes clearfix<?php echo $imgposcls; ?>">
                 <div class="fl-dft-overflow-module-in-bg"></div>
                 <div class="fl-dft-lftimg-rgtdes-lft has-inline-bg">
-                  <div class="inline-bg" style="background-image: url(assets/images/dfp-img-02.jpg);"></div>
+                  <div class="inline-bg" style="background-image: url(<?php echo $imgsrc; ?>);"></div>
                   <div class="fl-dft-lftimg-rgtdes-lft-img">
-                    <img src="assets/images/dfp-img-02.jpg">
+                    <?php echo $imgtag; ?>
                   </div>
                 </div>
                 <div class="fl-dft-lftimg-rgtdes-rgt">
-                  <h3>Lorem Ipsum dummy</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy text ever since the an unknown printer took a galley of type scrambled it to make a specimen book. It has survived not only five centuries, but the leap into electronic typesetting, unchanged. Lorem Ipsu simply dummy text of the printing typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy text ever since the an unknown printer took a galley of type </p>
-                  <a href="#" class="fl-red-btn">Read More</a>
+                    <?php 
+                    echo wpautop($fc_tekst); 
+                    if( is_array( $fc_link ) &&  !empty( $fc_link['url'] ) ){
+                        printf('<a class="fl-red-btn" href="%s" target="%s">%s</a>', $fc_link['url'], $fc_link['target'], $fc_link['title']); 
+                    }
+                    ?>
                 </div>
               </div>
             </div>
@@ -64,6 +57,9 @@
         </div>
       </div>
     </div>
+    <?php } ?>
+    <?php endwhile; ?>
   </article>
+  <?php } ?>
 </section>
 <?php get_footer(); ?>
