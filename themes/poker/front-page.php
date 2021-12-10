@@ -46,6 +46,11 @@
   </div>
 </section>
 <?php endif; ?>
+<?php
+$showhidepoker = get_field('showhidepoker', HOMEID);
+if($showhidepoker): 
+  $poker = get_field('pokersec', HOMEID);
+?>
 <?php 
 $args = array(
     'post_type' => 'poker_sites',
@@ -57,7 +62,7 @@ $args = array(
     <div class="row">
       <div class="col-md-12">
         <div class="sec-entry-hdr text-center">
-          <h2 class="fl-h3 sec-entry-hdr-title"><?php _e('Best Sites to Play Online Poker', 'poker'); ?></h2>
+          <?php if( !empty($poker['title']) ) printf('<h2 class="fl-h3 sec-entry-hdr-title">%s</h2>', $poker['title']); ?>
         </div>
         <div class="best-site-selection-sec-cntlr">
           <div class="table-dsc">
@@ -528,6 +533,7 @@ $args = array(
     </div>
   </div>
 </section>
+<?php endif; ?>
 <?php
 $showhidetools = get_field('showhidetools', HOMEID);
 if($showhidetools): 
