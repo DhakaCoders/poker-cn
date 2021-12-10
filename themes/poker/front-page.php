@@ -1,43 +1,63 @@
 <?php get_header(); ?>
-<section class="hm-banner">
+<?php  
+  $hbanner = get_field('banner', HOMEID);
+  if($hbanner):
+  $banner_img = !empty($hbanner['image'])? cbv_get_image_tag( $hbanner['image'] ): '';
+  $banner = !empty($hbanner['bg_image'])? cbv_get_image_src( $hbanner['bg_image'] ): '';
+  $is_video = !empty($hbanner['upload_video'])?' has-vdo':''; 
+?>
+<section class="hm-banner<?php echo $is_video; ?>">
   <div class="hm-banner-bg-black"></div>
+  <?php if( !empty($hbanner['upload_video']) ): ?>
   <div class="hm-video-cntlr">
     <video id="bnr-vdo" autoplay muted loop>
-      <source src="<?php echo THEME_URI; ?>/assets/images/videos/placeholder-video.mp4" type="video/mp4">
-      <source src="<?php echo THEME_URI; ?>/assets/images/videos/placeholder-video.mp4" type="video/mp4">
+      <source src="<?php echo $hbanner['upload_video'];?>" type="video/mp4">
     </video>
   </div>
+  <?php else: ?>
   <div class="hm-bnr-img-ctlr">
-    <div class="hm-banner-bg inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/banner-bg.png);"></div>
+    <div class="hm-banner-bg inline-bg" style="background-image: url(<?php echo $banner; ?>);"></div>
   </div>
+  <?php endif; ?>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="hm-bnr-cntlr">
             <div class="hm-banner-des">
-              <h1 class="hm-bnr-title fl-h1">Getting Started with Online Poker</h1>
+              <?php if( !empty($hbanner['title']) ) printf( '<h1 class="hm-bnr-title fl-h1">%s</h1>', $hbanner['title'] ); ?>
               <div class="hm-banner-des-inr">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+                <?php if( !empty($hbanner['description']) ) echo wpautop( $hbanner['description'] );?>
               </div>
-              <div class="hm-bnr-btn">
-                <a href="#" class="fl-red-btn fl-btn-angel">Read More</a>
-              </div>
+              <?php
+                $hlink = $hbanner['link'];
+                if( is_array( $hlink ) &&  !empty( $hlink['url'] ) ){
+                    printf('<div class="hm-bnr-btn"><a class="fl-red-btn fl-btn-angel" href="%s" target="%s">%s</a></div>', $hlink['url'], $hlink['target'], $hlink['title']); 
+                }
+              ?>
             </div>
+            <?php if( empty($hbanner['upload_video']) ): ?>
           <div class="hm-bnr-img hide-sm">
-            <img src="<?php echo THEME_URI; ?>/assets/images/banner-img.png">
+            <?php echo $banner_img; ?>
           </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+<?php endif; ?>
+<?php 
+$args = array(
+    'post_type' => 'poker_sites',
+    'posts_per_page'=> -1
+);
+?>
 <section class="best-site-selection-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="sec-entry-hdr text-center">
-          <h2 class="fl-h3 sec-entry-hdr-title">Best Sites to Play Online Poker</h2>
+          <h2 class="fl-h3 sec-entry-hdr-title"><?php _e('Best Sites to Play Online Poker', 'poker'); ?></h2>
         </div>
         <div class="best-site-selection-sec-cntlr">
           <div class="table-dsc">
@@ -508,48 +528,57 @@
     </div>
   </div>
 </section>
-
+<?php
+$showhidetools = get_field('showhidetools', HOMEID);
+if($showhidetools): 
+  $strategy = get_field('strategysec', HOMEID);
+  $strategy_title = get_field('strategy_title', HOMEID);
+  if($strategy):
+?>
 <section class="Poker-Strategy-Tools-sec ">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="sec-entry-hdr text-center">
-          <h2 class="fl-h3 sec-entry-hdr-title">Poker Strategy & Tools</h2>
+          <?php if( !empty($strategy_title) ) printf( '<h2 class="fl-h3 sec-entry-hdr-title">%s</h2>',$strategy_title ); ?>
         </div>
         <div class="Poker-Strategy-Tools-sec-cntlr">
           <div class="pk-strtgy-tls-lft-img">
-            <span>featured</span>
-            <div class="pk-strtgy-tls-img inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/pk-strtgy-img.jpg);"></div>
+            <?php if( !empty($strategy['flash']) ) printf( '<span>%s</span>', $strategy['flash'] ); ?>
+            <div class="pk-strtgy-tls-img inline-bg" style="background-image: url(<?php if( !empty($strategy['image']) ) echo cbv_get_image_src( $strategy['image'] ); ?>);"></div>
           </div>
           <div class="pk-strtgy-tls-des">
-            <h3 class="fl-h5 pk-strtgy-tls-title">Free Poker Sites: Where to Play Free Online Poker in 2021</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            </ul>
-            <div class="pk-strtgy-tls-des-btn">
-              <a href="#" class="pk-strtgy-tls-des-btn">View Post</a>
-              <svg class="btn-arrow" width="53" height="24" viewBox="0 0 53 24" fill="#FF5C26">
-                <use xlink:href="#btn-arrow"></use> 
-              </svg>
-            </div>
+            <?php
+              if( !empty($strategy['title']) ) printf( '<h3 class="fl-h5 pk-strtgy-tls-title">%s</h3>', $strategy['title'] );
+              if( !empty($strategy['description']) ) echo wpautop( $strategy['description'] );
+              $stlink = $strategy['link'];
+              if( is_array( $stlink ) &&  !empty( $stlink['url'] ) ){
+                  printf('<div class="pk-strtgy-tls-des-btn"><a class="pk-strtgy-tls-des-btn" href="%s" target="%s">%s<svg class="btn-arrow" width="53" height="24" viewBox="0 0 53 24" fill="#FF5C26">
+                    <use xlink:href="#btn-arrow"></use> 
+                  </svg></a></div>', $stlink['url'], $stlink['target'], $stlink['title']); 
+              }
+            ?>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-
+<?php endif; ?>
+<?php endif; ?>
+<?php
+$showhidenews = get_field('showhidenews', HOMEID);
+if($showhidenews): 
+  $news = get_field('newssec', HOMEID);
+  if($news):
+?>
 <section class="news-section">
   <div class="news-sec-cntlr">
     <div class="news-sec-entry-hdr-cntlr">
       <div class="sec-entry-hdr">
-        <h2 class="fl-h3 sec-entry-hdr-title">news</h2>
+        <?php if( !empty($news['title']) ) printf( '<h2 class="fl-h3 sec-entry-hdr-title">%s</h2>', $news['title'] ); ?>
       </div>
+      <?php if( !empty($news['select_news']) ): ?>
       <div class="fl-prev-next">
         <span class="fl-prev">
           <i>
@@ -566,7 +595,9 @@
           </i>
         </span>
       </div>
+      <?php endif; ?>
     </div>
+    <?php if( !empty($news['select_news']) ): ?>
     <div class="news-grid newsSlider">
       <div class="news-grid-item">
         <div class="item-overlay"></div>
@@ -625,6 +656,9 @@
         </div>
       </div>
     </div>
+    <?php endif; ?>
   </div>
 </section>
+<?php endif; ?>
+<?php endif; ?>
 <?php get_footer(); ?>
