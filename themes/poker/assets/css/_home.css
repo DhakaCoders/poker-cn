@@ -309,7 +309,12 @@ td.site-bonus:before{
     font-weight: 400;
     text-transform: uppercase;
 }
-.best-site-cart-dsc-cntlr ul li:first-child {
+/*.best-site-cart-dsc-cntlr ul li:first-child {
+    background: transparent;
+    padding-bottom: 23px;
+    padding-top: 0px;
+}*/
+.best-site-cart-dsc-cntlr ul li.bg-transparent {
     background: transparent;
     padding-bottom: 23px;
     padding-top: 0px;
