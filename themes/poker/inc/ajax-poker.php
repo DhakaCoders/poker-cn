@@ -42,7 +42,7 @@ function ajax_poker_load_more($args) {
     <?php
     while($query->have_posts()): $query->the_post();
 	  $imgID = get_post_thumbnail_id(get_the_ID());
-	  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): community_placeholder('tag');
+	  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): poker_placeholder('tag');
 	  $rating = get_field('rating', get_the_ID());
 	  $pay_grade = get_field('payment_grade', get_the_ID());
 	  $bonus_percent = get_field('bonus_percent_value', get_the_ID());
