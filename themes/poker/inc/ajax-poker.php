@@ -26,19 +26,6 @@ function ajax_poker_load_more($args) {
    // printr($query);
     if($query->have_posts()){
     ?>
-	<li class="bg-transparent">
-	  <div class="bst-site-cart-item-heading">
-	    <div class="pog-site-thumbnail-name">
-	      <span><?php _e('POKER ROOM', 'poker'); ?></span>
-	    </div>
-	    <div class="pog-site-price-grt-title">
-	      <span><?php _e('PAYMENT GRADE', 'poker'); ?></span>
-	    </div>
-	    <div class="pog-site-bonus-title">
-	      <span><?php _e('BONUS', 'poker'); ?></span>
-	    </div>
-	  </div>
-	</li>
     <?php
     while($query->have_posts()): $query->the_post();
 	  $imgID = get_post_thumbnail_id(get_the_ID());

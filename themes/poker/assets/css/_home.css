@@ -1021,6 +1021,18 @@ td.site-bonus:before{
     .Poker-Strategy-Tools-sec .sec-entry-hdr {
         padding-bottom: 30px;
     }
+    .hm-bnr-img{
+        order: 1;
+        position: static;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        margin-top: -100px;
+        padding-bottom: 30px;        
+    }
+    .hm-banner-des{
+        order: 2;
+    }
 }
 
 @media(max-width:575px){

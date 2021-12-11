@@ -164,7 +164,15 @@ ol li::before {
     text-transform: uppercase;
     margin-bottom: 25px;
 }
-
+.cn-404{
+    padding: 60px 0;
+    min-height: 400px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 @media(max-width:1199px){
 	.default-page-con ul li, ul li {
 	    padding: 7px 0 20px 46px;
@@ -192,5 +200,10 @@ ol li::before {
 	}
 	.default-page-con ul li, ul li {
 	    padding: 7px 0 17px 42px;
+	}
+	.cn-404{
+	    padding: 60px 0;
+	    min-height: 250px;
+	    text-align: center;
 	}
 }
