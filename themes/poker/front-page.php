@@ -54,7 +54,9 @@ if($showhidepoker):
 <?php 
 $args = array(
     'post_type' => 'poker_sites',
-    'posts_per_page'=> -1
+    'posts_per_page'=> 5,
+    'orderby' => 'date',
+    'order'=> 'DESC'
 );
 ?>
 <section class="best-site-selection-sec">
@@ -65,257 +67,50 @@ $args = array(
           <?php if( !empty($poker['title']) ) printf('<h2 class="fl-h3 sec-entry-hdr-title">%s</h2>', $poker['title']); ?>
         </div>
         <div class="best-site-selection-sec-cntlr">
-          <div class="table-dsc">
-            <table>
-              <thead class="tbl-thead">
-                <tr>
-                  <th colspan="2" class="site-name"><span class="mHc">POKER ROOM</span></th>
-                  <th class="payment"><span class="mHc">PAYMENT GRADE</span></th>
-                  <th colspan="2" class="bonus"><span class="mHc">BONUS</span></th>
-                </tr>
-              </thead>
-              <tbody class="tbl-bdy">
-                 <tr>
-                  <td class="best-site-thumbnail">
-                    <a href="#">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/best-site-logo-1.png">
-                    </a>
-                  </td>
-                  <td class="bst-site-des">
-                    <div class="best-site-des">
-                      <h6 class="fl-h6 best-site-title">Poker Room</h6>
-                      <div class="site-reting">
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star-smple.png" alt=""></span>
-                      </div>
-                      <div class="site-des">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="payment-grate">
-                    <div class="payment-grate-inner">
-                      <div class="payment-grt-cntlr">
-                        <span>a+</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="site-bonus">
-                    <div class="site-bonus-lft">
-                      <strong>100%</strong>
-                      <span>Up to $2500</span>
-                    </div>
-                  </td>
-                  <td class="play-btn">
-                    <div class="site-bonus-btn">
-                      <a href="#" class="fl-btn">Play Now</a>
-                      <a href="#" class="fl-btn">review</a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="best-site-thumbnail">
-                    <a href="#">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/best-site-logo-2.png">
-                    </a> 
-                  </td>
-                  <td class="bst-site-des">
-                    <div class="best-site-des">
-                      <h6 class="fl-h6 best-site-title">Poker Room</h6>
-                      <div class="site-reting">
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                      </div>
-                      <div class="site-des">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="payment-grate">
-                    <div class="payment-grate-inner">
-                      <div class="payment-grt-cntlr">
-                        <span>a+</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="site-bonus">
-                    <div class="site-bonus-lft">
-                      <strong>100%</strong>
-                      <span>Up to $2500</span>
-                    </div>
-                  </td>
-                  <td class="play-btn">
-                    <div class="site-bonus-btn">
-                      <a href="#" class="fl-btn">Play Now</a>
-                      <a href="#" class="fl-btn">review</a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="best-site-thumbnail">
-                    <a href="#">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/best-site-logo-3.png">
-                    </a> 
-                  </td>
-                  <td class="bst-site-des">
-                    <div class="best-site-des">
-                      <h6 class="fl-h6 best-site-title">Poker Room</h6>
-                      <div class="site-reting">
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                      </div>
-                      <div class="site-des">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="payment-grate">
-                    <div class="payment-grate-inner">
-                      <div class="payment-grt-cntlr">
-                        <span>a+</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="site-bonus">
-                    <div class="site-bonus-lft">
-                      <strong>100%</strong>
-                      <span>Up to $2500</span>
-                    </div>
-                  </td>
-                  <td class="play-btn">
-                    <div class="site-bonus-btn">
-                      <a href="#" class="fl-btn">Play Now</a>
-                      <a href="#" class="fl-btn">review</a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="best-site-thumbnail">
-                    <a href="#">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/best-site-logo-4.png">
-                    </a> 
-                  </td>
-                  <td class="bst-site-des">
-                    <div class="best-site-des">
-                      <h6 class="fl-h6 best-site-title">Poker Room</h6>
-                      <div class="site-reting">
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                      </div>
-                      <div class="site-des">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="payment-grate">
-                    <div class="payment-grate-inner">
-                      <div class="payment-grt-cntlr">
-                        <span>a+</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="site-bonus">
-                    <div class="site-bonus-lft">
-                      <strong>100%</strong>
-                      <span>Up to $2500</span>
-                    </div>
-                  </td>
-                  <td class="play-btn">
-                    <div class="site-bonus-btn">
-                      <a href="#" class="fl-btn">Play Now</a>
-                      <a href="#" class="fl-btn">review</a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="best-site-thumbnail">
-                    <a href="#">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/best-site-logo-5.png">
-                    </a> 
-                  </td>
-                  <td class="bst-site-des">
-                    <div class="best-site-des">
-                      <h6 class="fl-h6 best-site-title">Poker Room</h6>
-                      <div class="site-reting">
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                        <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                      </div>
-                      <div class="site-des">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="payment-grate">
-                    <div class="payment-grate-inner">
-                      <div class="payment-grt-cntlr">
-                        <span>a+</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="site-bonus">
-                    <div class="site-bonus-lft">
-                      <strong>100%</strong>
-                      <span>Up to $2500</span>
-                    </div>
-                  </td>
-                  <td class="play-btn">
-                    <div class="site-bonus-btn">
-                      <a href="#" class="fl-btn">Play Now</a>
-                      <a href="#" class="fl-btn">review</a>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+
           <div class="best-site-cart-dsc">
             <div class="best-site-cart-dsc-cntlr">
               <ul class="reset-list">
-                <li>
+                <li class="bg-transparent">
                   <div class="bst-site-cart-item-heading">
                     <div class="pog-site-thumbnail-name">
-                      <span>POKER ROOM</span>
+                      <span><?php _e('POKER ROOM', 'poker'); ?></span>
                     </div>
                     <div class="pog-site-price-grt-title">
-                      <span>PAYMENT GRADE </span>
+                      <span><?php _e('PAYMENT GRADE', 'poker'); ?></span>
                     </div>
                     <div class="pog-site-bonus-title">
-                      <span>BONUS</span>
+                      <span><?php _e('BONUS', 'poker'); ?></span>
                     </div>
                   </div>
                 </li>
+                <?php 
+                  $hideload_more = false;
+                  $query = new WP_Query($args);
+                  if($query->have_posts()){
+                  while( $query->have_posts() ){ $query->the_post();
+                  $imgID = get_post_thumbnail_id(get_the_ID());
+                  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): community_placeholder('tag');
+                  $rating = get_field('rating', get_the_ID());
+                  $pay_grade = get_field('payment_grade', get_the_ID());
+                  $bonus_percent = get_field('bonus_percent_value', get_the_ID());
+                  $bonus_text = get_field('bonus_text', get_the_ID());
+                  $play_link = get_field('play_link', get_the_ID());
+                  $review_link = get_field('review_link', get_the_ID());
+                ?>
                 <li>
                   <div class="bst-site-cart-item">
                     <div class="pog-site-thumbnail">
-                      <a href="#">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/best-site-logo-1.png" alt="">
+                      <a>
+                        <?php echo $imgtag; ?>
                       </a>
                       <div class="pog-site-des">
-                        <h6 class="fl-h6 best-site-title">Poker Room</h6>
+                        <h6 class="fl-h6 best-site-title"><?php the_title(); ?></h6>
                         <div class="site-reting">
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star-smple.png" alt=""></span>
+                        <?php cbv_get_rating($rating); ?>
                         </div>
                         <div class="site-des">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
+                          <?php the_excerpt(); ?>
                         </div>
                       </div>
                     </div>
@@ -324,210 +119,55 @@ $args = array(
 
                       <div class="pog-site-price-grt">
                         <div class="pog-site-price-grt-cntlr">
-                          <span>a+</span>
+                          <?php if(!empty($pay_grade)) printf('<strong>%s</strong>', $pay_grade); ?>
                         </div>
                       </div>
 
                       <div class="POG-site-bonus-lft">
-                        <strong>100%</strong>
-                        <span>Up to $2500</span>
+                      <?php 
+                        if( !empty($bonus_percent) ) printf('<strong>%s%s</strong>', $bonus_percent, '%'); 
+                        if( !empty($bonus_text) ) printf('<span>%s</span>', $bonus_text); 
+                      ?>
                       </div>
                     </div>
 
                     <div class="pog-site-btn">
                         <div class="pog-site-bonus-btn">
-                          <a href="#" class="fl-btn">Play Now</a>
-                          <a href="#" class="fl-btn">review</a>
+                          <?php
+                          if( is_array( $play_link ) &&  !empty( $play_link['url'] ) ){
+                            $playtitle = !empty($play_link['title'])?$play_link['title']:'Play Now';
+                            printf('<a class="fl-btn" href="%s" target="%s">%s</a>', $play_link['url'], $play_link['target'], $playtitle); 
+                          }else{
+                            printf('<a class="fl-btn" href="%s">%s</a>', '#', 'Play Now'); 
+                          }
+                          if( is_array( $review_link ) &&  !empty( $review_link['url'] ) ){
+                            $reviewtitle = !empty($review_link['title'])?$review_link['title']:'review';
+                            printf('<a class="fl-btn" href="%s" target="%s">%s</a>', $review_link['url'], $review_link['target'], $reviewtitle); 
+                          }else{
+                            printf('<a class="fl-btn" href="%s">%s</a>', '#', 'review'); 
+                          }
+                          ?>
                         </div>
                     </div>
 
                   </div>
                 </li>
-
-                <li>
-                  <div class="bst-site-cart-item">
-                    <div class="pog-site-thumbnail">
-                      <a href="#">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/best-site-logo-2.png" alt="">
-                      </a>
-                      <div class="pog-site-des">
-                        <h6 class="fl-h6 best-site-title">Poker Room</h6>
-                        <div class="site-reting">
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star-smple.png" alt=""></span>
-                        </div>
-                        <div class="site-des">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
-                        </div>
-                      </div>
-                    </div>
- 
-                    <div class="pog-site-bonus">
-
-                      <div class="pog-site-price-grt">
-                        <div class="pog-site-price-grt-cntlr">
-                          <span>a+</span>
-                        </div>
-                      </div>
-
-                      <div class="POG-site-bonus-lft">
-                        <strong>100%</strong>
-                        <span>Up to $2500</span>
-                      </div>
-                    </div>
-
-                    <div class="pog-site-btn">
-                        <div class="pog-site-bonus-btn">
-                          <a href="#" class="fl-btn">Play Now</a>
-                          <a href="#" class="fl-btn">review</a>
-                        </div>
-                    </div>
-
-                  </div>
-                </li>
-
-                 <li>
-                  <div class="bst-site-cart-item">
-                    <div class="pog-site-thumbnail">
-                      <a href="#">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/best-site-logo-3.png" alt="">
-                      </a>
-                      <div class="pog-site-des">
-                        <h6 class="fl-h6 best-site-title">Poker Room</h6>
-                        <div class="site-reting">
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star-smple.png" alt=""></span>
-                        </div>
-                        <div class="site-des">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
-                        </div>
-                      </div>
-                    </div>
- 
-                    <div class="pog-site-bonus">
-
-                      <div class="pog-site-price-grt">
-                        <div class="pog-site-price-grt-cntlr">
-                          <span>a+</span>
-                        </div>
-                      </div>
-
-                      <div class="POG-site-bonus-lft">
-                        <strong>100%</strong>
-                        <span>Up to $2500</span>
-                      </div>
-                    </div>
-
-                    <div class="pog-site-btn">
-                        <div class="pog-site-bonus-btn">
-                          <a href="#" class="fl-btn">Play Now</a>
-                          <a href="#" class="fl-btn">review</a>
-                        </div>
-                    </div>
-
-                  </div>
-                </li>
-
-                 <li>
-                  <div class="bst-site-cart-item">
-                    <div class="pog-site-thumbnail">
-                      <a href="#">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/best-site-logo-4.png" alt="">
-                      </a>
-                      <div class="pog-site-des">
-                        <h6 class="fl-h6 best-site-title">Poker Room</h6>
-                        <div class="site-reting">
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star-smple.png" alt=""></span>
-                        </div>
-                        <div class="site-des">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
-                        </div>
-                      </div>
-                    </div>
- 
-                    <div class="pog-site-bonus">
-
-                      <div class="pog-site-price-grt">
-                        <div class="pog-site-price-grt-cntlr">
-                          <span>a+</span>
-                        </div>
-                      </div>
-
-                      <div class="POG-site-bonus-lft">
-                        <strong>100%</strong>
-                        <span>Up to $2500</span>
-                      </div>
-                    </div>
-
-                    <div class="pog-site-btn">
-                        <div class="pog-site-bonus-btn">
-                          <a href="#" class="fl-btn">Play Now</a>
-                          <a href="#" class="fl-btn">review</a>
-                        </div>
-                    </div>
-
-                  </div>
-                </li>
-                 <li>
-                  <div class="bst-site-cart-item">
-                    <div class="pog-site-thumbnail">
-                      <a href="#">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/best-site-logo-5.png" alt="">
-                      </a>
-                      <div class="pog-site-des">
-                        <h6 class="fl-h6 best-site-title">Poker Room</h6>
-                        <div class="site-reting">
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star.png" alt=""></span>
-                          <span><img src="<?php echo THEME_URI; ?>/assets/images/star-smple.png" alt=""></span>
-                        </div>
-                        <div class="site-des">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
-                        </div>
-                      </div>
-                    </div>
- 
-                    <div class="pog-site-bonus">
-
-                      <div class="pog-site-price-grt">
-                        <div class="pog-site-price-grt-cntlr">
-                          <span>a+</span>
-                        </div>
-                      </div>
-
-                      <div class="POG-site-bonus-lft">
-                        <strong>100%</strong>
-                        <span>Up to $2500</span>
-                      </div>
-                    </div>
-
-                    <div class="pog-site-btn">
-                        <div class="pog-site-bonus-btn">
-                          <a href="#" class="fl-btn">Play Now</a>
-                          <a href="#" class="fl-btn">review</a>
-                        </div>
-                    </div>
-
-                  </div>
-                </li>
+                <?php } ?>
+              <?php }else{ $hideload_more = true;?>
+                <li><div class="notfound"><?php _e('No Result.', 'poker'); ?></div></li>
+              <?php } wp_reset_postdata(); ?>
+              </ul>
+              <ul class="reset-list" id="ajax-content">
+                
               </ul>
             </div>
           </div>
+          <?php if( !$hideload_more ): ?>
           <div class="more-btn">
-            <a href="#">LOAD MORE</a>
+            <div class="ajaxloading" id="ajxaloader" style="display:none"><img src="<?php echo THEME_URI; ?>/assets/images/loading.gif" alt="loader"></div>
+            <a href="#" id="loadMore"  data-page="1" data-url="<?php echo admin_url("admin-ajax.php"); ?>" ><?php _e('LOAD MORE', 'poker'); ?></a>
           </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>
@@ -603,64 +243,40 @@ if($showhidenews):
       </div>
       <?php endif; ?>
     </div>
-    <?php if( !empty($news['select_news']) ): ?>
+    <?php 
+      $newsobj = $news['select_news'];
+      if( empty($newsobj) ){
+          $newsobj = get_posts( array(
+            'post_type' => 'post',
+            'posts_per_page'=> 4,
+            'orderby' => 'date',
+            'order'=> 'desc',
+            'suppress_filters' => false
+          ) );  
+      } 
+    ?>
+    <?php if( $newsobj ): ?>
     <div class="news-grid newsSlider">
+      <?php 
+      foreach( $newsobj as $news_row ): 
+        $newsimgID = get_post_thumbnail_id($news_row->ID);
+        $nimgsrc = !empty($newsimgID)? cbv_get_image_src($newsimgID): news_placeholder();
+      ?>
       <div class="news-grid-item">
         <div class="item-overlay"></div>
         <div class="news-grid-item-inner">
           <div class="news-grid-item-img">
             <div class="news-grid-item-img-ineer">
-              <a href="#" class="overlay-link"></a>
-              <div class="news-grid-item-div inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/news-grid-1.jpg);"></div>
+              <a href="<?php echo get_the_permalink($news_row->ID); ?>" class="overlay-link"></a>
+              <div class="news-grid-item-div inline-bg" style="background-image: url(<?php echo $nimgsrc; ?>);"></div>
             </div>
           </div>
           <div class="news-grid-item-des">
-            <h6 class="news-grid-item-title fl-h6"><a href="#">What You Need to Start Playing Online Poker?</a></h6>
+            <h6 class="news-grid-item-title fl-h6"><a href="<?php echo get_the_permalink($news_row->ID); ?>"><?php echo get_the_title($news_row->ID); ?></a></h6>
           </div>
         </div>
       </div>
-      <div class="news-grid-item">
-        <div class="item-overlay"></div>
-        <div class="news-grid-item-inner">
-          <div class="news-grid-item-img">
-            <div class="news-grid-item-img-ineer">
-              <a href="#" class="overlay-link"></a>
-              <div class="news-grid-item-div inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/banner-img-2.jpg);"></div>
-            </div>
-          </div>
-          <div class="news-grid-item-des">
-            <h6 class="news-grid-item-title fl-h6"><a href="#">What Types of Poker Games Can I Play?</a></h6>
-          </div>
-        </div>
-      </div>
-      <div class="news-grid-item">
-        <div class="item-overlay"></div>
-        <div class="news-grid-item-inner">
-          <div class="news-grid-item-img">
-            <div class="news-grid-item-img-ineer">
-              <a href="#" class="overlay-link"></a>
-              <div class="news-grid-item-div inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/banner-img-3.jpg);"></div>
-            </div>
-          </div>
-          <div class="news-grid-item-des">
-            <h6 class="news-grid-item-title fl-h6"><a href="#">Top 10 Poker Tips for Beginners</a></h6>
-          </div>
-        </div>
-      </div>
-      <div class="news-grid-item">
-        <div class="item-overlay"></div>
-        <div class="news-grid-item-inner">
-          <div class="news-grid-item-img">
-            <div class="news-grid-item-img-ineer">
-              <a href="#" class="overlay-link"></a>
-              <div class="news-grid-item-div inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/banner-img-2.jpg);"></div>
-            </div>
-          </div>
-          <div class="news-grid-item-des">
-            <h6 class="news-grid-item-title fl-h6"><a href="#">What You Need to Start Playing Online Poker?</a></h6>
-          </div>
-        </div>
-      </div>
+      <?php endforeach; ?>
     </div>
     <?php endif; ?>
   </div>

@@ -86,6 +86,49 @@ if( $('.newsSlider').length ){
   });
 }
 
+$("#loadMore").on('click', function(e) {
+    e.preventDefault();
+    //init
+    var that = $(this);
+    var page = $(this).data('page');
+    var newPage = page + 1;
+    var ajaxurl = that.data('url');
+    //ajax call
+    $.ajax({
+        url: ajaxurl,
+        type: 'post',
+        data: {
+            page: page,
+            el_li: 'not',
+            action: 'ajax_poker_load_more'
+        },
+        beforeSend: function ( xhr ) {
+            $('#ajxaloader').show();
+             
+        },
+        
+        success: function(html ) {
+          console.log(html);
+            //check
+            if (html  == 0) {
+                //$('.show-more-btn').prepend('<div class="clearfix"></div><div class="text-center"><p>Geen producten meer om te laden.</p></div>');
+                $('.more-btn').hide();
+                $('#ajxaloader').hide();
+            } else {
+                setTimeout(function(){ 
+                  $('#ajxaloader').hide();
+                  that.data('page', newPage);
+                  $('#ajax-content').append(html .substr(html .length-1, 1) === '0'? html.substr(0, html.length-1) : html);
+                 }, 1000);
+            }
+        },
+        error: function(html ) {
+            console.log('asdfsd');
+        },
+    });
+});
+
+
 function attrvaluupdate(){
   var windowsize =  $(window).width();
   

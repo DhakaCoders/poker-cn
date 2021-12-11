@@ -201,63 +201,13 @@ function news_placeholder($format = 'src'){
   $placehoder = get_field('placeholder', 'options');
   if( !empty($placehoder) ){
       if( $format == 'src' ){
-        $placeholder = !empty($placehoder['nieuws'])? cbv_get_image_src($placehoder['nieuws']):'';
+        $placeholder = !empty($placehoder['news'])? cbv_get_image_src($placehoder['news']):'';
       }else{
-        $placeholder = !empty($placehoder['nieuws'])? cbv_get_image_tag($placehoder['nieuws']):'';
+        $placeholder = !empty($placehoder['news'])? cbv_get_image_tag($placehoder['news']):'';
       }
       return $placeholder;
   }
   return '';
-
-}
-function product_placeholder($format = 'src'){
-  $placehoder = get_field('placeholder', 'options');
-  if( !empty($placehoder) ){
-      if( $format == 'src' ){
-        $placeholder = !empty($placehoder['product'])? cbv_get_image_src($placehoder['product']):'';
-      }else{
-        $placeholder = !empty($placehoder['product'])? cbv_get_image_tag($placehoder['product']):'';
-      }
-      return $placeholder;
-  }
-  return '';
-
-}
-function sports_placeholder($format = 'src'){
-  $placehoder = get_field('placeholder', 'options');
-  if( !empty($placehoder) ){
-      if( $format == 'src' ){
-        $placeholder = !empty($placehoder['sports'])? cbv_get_image_src($placehoder['sports']):'';
-      }else{
-        $placeholder = !empty($placehoder['sports'])? cbv_get_image_tag($placehoder['sports']):'';
-      }
-      return $placeholder;
-  }
-  return '';
-
-}
-
-function club_placeholder($format = 'src'){
-  $placehoder = get_field('placeholder', 'options');
-  if( !empty($placehoder) ){
-      if( $format == 'src' ){
-        $placeholder = !empty($placehoder['club'])? cbv_get_image_src($placehoder['club']):'';
-      }else{
-        $placeholder = !empty($placehoder['club'])? cbv_get_image_tag($placehoder['club']):'';
-      }
-      return $placeholder;
-  }
-  return '';
-
-}
-function no_result_text(){
-  $no_results = get_field('no_results', 'options');
-  if( !empty($no_results) ){
-    $text = $no_results;
-  }else{
-    $text = __( 'Geen resultaat', 'canoetrip' );
-  }
-  return $text;
 
 }
 function bv_get_current_year(){
@@ -271,12 +221,49 @@ function num_format($num){
   }
   return $num;
 }
-function cbv_get_excerpt(){
-  global $post;
-  $link = '<a href="'. get_permalink($post->ID) . '">'.__(' ....more', 'canoetrip').'</a>';
-  $excerpt = explode(' ', get_the_excerpt());
-  //array_pop($excerpt);
-  $excerpt = implode(" ",$excerpt);
-  $excerpt .= $link;
-  return wpautop($excerpt);
+function cbv_get_rating($rating){
+  switch($rating){
+    case 1:
+    echo '<span><img src="'.THEME_URI.'/assets/images/star.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star-smple.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star-smple.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star-smple.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star-smple.png" alt=""></span>';
+    break;
+    case 2:
+    echo '<span><img src="'.THEME_URI.'/assets/images/star.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star-smple.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star-smple.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star-smple.png" alt=""></span>';
+    break;
+    case 3:
+    echo '<span><img src="'.THEME_URI.'/assets/images/star.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star-smple.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star-smple.png" alt=""></span>';
+    break;
+    case 4:
+    echo '<span><img src="'.THEME_URI.'/assets/images/star.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star-smple.png" alt=""></span>';
+    break;
+    case 5:
+    echo '<span><img src="'.THEME_URI.'/assets/images/star.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star.png" alt=""></span>';
+    break;
+    default:
+    echo '<span><img src="'.THEME_URI.'/assets/images/star-smple.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star-smple.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star-smple.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star-smple.png" alt=""></span>';
+    echo '<span><img src="'.THEME_URI.'/assets/images/star-smple.png" alt=""></span>';
+
+  }
 }

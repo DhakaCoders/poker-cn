@@ -61,6 +61,7 @@ add_action( 'wp_enqueue_scripts', 'cbv_theme_scripts');
 /**
 Includes->>
 */
+include_once(THEME_DIR .'/inc/ajax-poker.php');
 include_once(THEME_DIR .'/inc/widgets-area.php');
 include_once(THEME_DIR .'/inc/breadcrumbs.php');
 include_once(THEME_DIR .'/inc/cbv-functions.php');
@@ -88,7 +89,7 @@ function is_blog () {
     return ( is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag()) && 'post' == get_post_type();
 }
 
-add_post_type_support( 'page', 'excerpt' );
+//add_post_type_support( 'page', 'excerpt' );
 
 add_filter('use_block_editor_for_post', '__return_false');
 // Disables the block editor from managing widgets in the Gutenberg plugin.
@@ -168,7 +169,7 @@ function remove_thumbnail_box() {
  * Remove content support from posts.
 */
 function cbv_wprocs_custom_init() {
-    remove_post_type_support( 'post', 'editor' );
+    //remove_post_type_support( 'post', 'editor' );
 }
 add_action( 'init', 'cbv_wprocs_custom_init' );
 /**

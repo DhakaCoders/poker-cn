@@ -36,8 +36,8 @@
   }else{
     $logo_tag = '';
   }
-  $fb_url = get_field('facebook_url', 'options');
-  $inst_url = get_field('instagram_url', 'options');
+  $pagelink = get_field('link', 'options');
+  $page_link = !empty($pagelink)?$pagelink:'#';
 ?>
 <header class="header">
   <div class="container">
@@ -66,7 +66,7 @@
                 </nav>
               </div>
               <div class="hdr-rgt-btn">
-                <a href="#" class="hdr-btn"><?php _e('View Casinos', 'poker'); ?></a>
+                <a href="<?php echo $page_link; ?>" class="hdr-btn"><?php _e('View Casinos', 'poker'); ?></a>
               </div>
             </div>
             <div class="hamburgar-cntlr show-md">
@@ -107,7 +107,7 @@
       <nav class="main-nav">
         <?php 
           $menuOptions = array( 
-              'theme_location' => 'cbv_mobile_main_menu', 
+              'theme_location' => 'cbv_mobile_menu', 
               'menu_class' => 'reset-list clearfix',
               'container' => 'ul',
               'container_class' => ''
@@ -118,7 +118,7 @@
     </div>
 
     <div class="xs-contact-btn">
-      <a href="#" class="fl-btn"><?php _e('View Casinos', 'poker'); ?></a>
+      <a href="<?php echo $page_link; ?>" class="fl-btn"><?php _e('View Casinos', 'poker'); ?></a>
     </div>
   </div>
 </div>
